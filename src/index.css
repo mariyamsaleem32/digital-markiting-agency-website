@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
+}
+
+code {
+  font-family: 'Times New Roman', Times, serif;
+}
+.page-title-area {
+  padding-bottom: 105px;
+  padding-top: 145px;
+  background-color: #3c065e;
+  text-align: center;
+  color: #fff;
+}
+.page-title-area h1 {
+  margin-bottom: 0;
+  font-weight: 700;
+
+}
