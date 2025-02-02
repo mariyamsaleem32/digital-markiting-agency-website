@@ -6,6 +6,7 @@ import { Link } from "react-router";
 
 function Slideshow({ subheadering1, heading, subheading }) {
   return (
+    <>
     <section className="home">
       <div className="container">
         <div className="row">
@@ -29,6 +30,7 @@ function Slideshow({ subheadering1, heading, subheading }) {
         </div>
       </div>
     </section>
+    </>
   );
 }
 export default Slideshow;

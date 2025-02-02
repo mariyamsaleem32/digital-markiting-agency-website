@@ -1,6 +1,5 @@
 export const ServicesText ={
    
-    serviceshome_subheader:'Our SERVICES',
     serviceshome_header:'Let’s Check Our Services',
     serviceshome_subheader1:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
 

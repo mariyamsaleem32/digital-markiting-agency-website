@@ -5,6 +5,7 @@ const { Panel } = Collapse;
 
 const FAQs = () => {
   return (
+    <>
     <div className="faq-container">
       <h1>FAQs</h1>
       <Collapse defaultActiveKey={['1']}>
@@ -25,6 +26,7 @@ const FAQs = () => {
         </Panel>
       </Collapse>
     </div>
+    </>
   );
 }
 

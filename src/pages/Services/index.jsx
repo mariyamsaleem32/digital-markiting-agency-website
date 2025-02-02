@@ -13,8 +13,8 @@ import {AiOutlineNotification,
         <div>
              <div className="serviceshome">
              <div className="page-title-area">
-        <h1>Our Services</h1>
-      </div>
+              <h1>Our Services</h1>
+            </div>
           <div className="container">
             <div className="servicesheader">
               <h6>{ServicesText.serviceshome_subheader}</h6>

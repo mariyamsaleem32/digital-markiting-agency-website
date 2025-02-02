@@ -1,49 +1,68 @@
 import React from "react";
-import "./style.css";
 import { Link } from "react-router";
- 
+import { Button } from "antd";
+import { FaBars } from "react-icons/fa";
+
 const Navbar = () => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light nav-bg p-3">
-  <Link className="navbar-brand" to="/"></Link>
-  <button
-    className="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span className="navbar-toggler-icon"></span>
-  </button>
+    <nav className="navbar navbar-expand-lg navbar-light nav-bg p-3">
+      <div className="container">
+        <Link className="navbar-brand" to="/">
+          MyBrand
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <FaBars style={{ fontSize: "24px" }} />
+        </button>
 
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav ml-auto">
-      <li className="nav-item">
-        <Link className="nav-link" to="/">Home</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/Aboutus">About</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/Services">Services</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/Price">Price</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/team">Our Team</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/Contactus">Contact Us</Link>
-      </li>
-    </ul>
-  </div>
-</nav>
-    </div>
-  )
-}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/services">
+                Services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/price">
+                Price
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/team">
+                Our Team
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <Button type="primary" className="ms-3">
+          Get Started
+        </Button>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;

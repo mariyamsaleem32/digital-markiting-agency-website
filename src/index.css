@@ -7,14 +7,13 @@ code {
   font-family: 'Times New Roman', Times, serif;
 }
 .page-title-area {
-  padding-bottom: 105px;
-  padding-top: 145px;
-  background-color: #3f0663;
+  padding-bottom: 140px;
+  padding-top: 85px;
+  /* background-color: #676269; */
   text-align: center;
-  color: #f5f4f4;
+  color: #751b1b;
 }
 .page-title-area h1 {
   margin-bottom: 0;
-  font-weight: 700;
-
+  font-weight: 1000;
 }
