@@ -1,32 +1,9 @@
 import React from "react";
 import "./style.css";
-export default function Footer() {
+import { Link } from "react-router";
+
+const Footer = () => {
   return (
-    <div>
-      <div className="newsletter">
-        <div className="container">
-          <div className="text-center">
-            <h6>Newsletter</h6>
-            <h4>Subscribe To Our Newsletter</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <form class="newsletter-form">
-            <input
-              type="text"
-              class="input-newsletter"
-              placeholder="Enter your email address"
-              name="EMAIL"
-              required=""
-            />
-            <button type="submit" class="btn learn-more-btn">
-              Subscribe Now
-            </button>
-          </form>
-        </div>
-      </div>
       <div className="footer">
         <div className="container footer-text">
           <div className="row">
@@ -54,25 +31,21 @@ export default function Footer() {
                 <li><a href="/">Career</a></li>
                 <li><a href="/team">Team</a></li>
                 <li><a href="/Contactus">Contact Us</a></li>
-                <li><a href="/">FAQ</a></li>
+                <li><Link to='/faq'>FAQ</Link></li>
               </ul>
             </div>
             <div className="col-lg-4 col-md-6 col-12">
               <h3>Address</h3>
               <ul>
-                <li>Chennai, Tamilnadu, India</li>
-                <li>+91 9874563210</li>
-                <li>contact@gmail.com</li>
-                <li>+3214569870</li>
+                <li>your addres</li>
+                <li>your number</li>
+                <li>xyz@gmail.com</li>
+                <li>your next number</li>
               </ul>
             </div>
           </div>
         </div>
-        <hr/>
-        <div className="footer-end">
-<h6 className="text-center">Design & Developed by mariyam saleem</h6>
-        </div>
       </div>
-    </div>
   );
 }
+export default Footer;
