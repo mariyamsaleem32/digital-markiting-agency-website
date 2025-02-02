@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Button, Result } from 'antd';
 
- const Notfound = () =>{
-    return (
-        <div>
-            <h1><b>404</b></h1>
-            <h3> page not found</h3>
-        </div>
-    )
-}
+const Notfound = () => (
+  <Result
+    status="404"
+    title="404"
+    subTitle="Sorry, the page you visited does not exist."
+    extra={<Button type="primary">Back Home</Button>}
+  />
+);
 export default Notfound;
 
