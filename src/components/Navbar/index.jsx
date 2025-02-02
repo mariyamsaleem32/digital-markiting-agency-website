@@ -1,34 +1,41 @@
 import React from "react";
 import { Link } from "react-router";
-import { Button, Navbar, Nav, Container } from "react-bootstrap"; 
-import { FaBars } from "react-icons/fa"; 
+import './app.js'
 import './styles.css';
 
 const NavigationBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="nav-bg p-3">
-      <Container>
-        <Navbar.Brand as={Link} to="/">
-          MyBrand
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav">
-          <FaBars style={{ fontSize: "24px" }} />
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
-            <Nav.Link as={Link} to="/services">Services</Nav.Link>
-            <Nav.Link as={Link} to="/price">Price</Nav.Link>
-            <Nav.Link as={Link} to="/team">Our Team</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-        <Button variant="primary" className="ms-3">
-          Get Started
-        </Button>
-      </Container>
-    </Navbar>
+<div className="header" data-header>
+    <div className="container">
+   <h1>markiting</h1>
+      <nav className="navbar container" data-navbar>
+        <ul className="navbar-list">
+          <li>
+            <Link to={'/'}  className="navbar-link" data-nav-link>Home</Link>
+          </li>
+          <li>
+            <Link to={'/aboutus'}  className="navbar-link" data-nav-link>About Us</Link>
+          </li>
+          <li>
+            <Link to={'/services'}  className="navbar-link" data-nav-link>Services</Link>
+          </li>
+          <li>
+            <Link to={'/portfolio'}  className="navbar-link" data-nav-link>Portfolio</Link>
+          </li>
+          <li>
+            <Link to={'/contactus'}  className="navbar-link" data-nav-link>Contact Us</Link>
+          </li>
+          <li>
+            <Link to={'/contactus'} className="btn btn-primary">Get Started</Link>
+          </li>
+        </ul>
+      </nav>
+      <button className="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" className="open"></ion-icon>
+        <ion-icon name="close-outline" className="close"></ion-icon>
+      </button>
+    </div>
+  </div>
   );
 };
 
