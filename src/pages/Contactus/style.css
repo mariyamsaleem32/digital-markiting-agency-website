@@ -10,8 +10,11 @@
 }
 
 .contact-box .icon {
-  width: 75px;
+  width: 85px;
   height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f7f7f7;
   border-radius: 3px;
   text-align: center;
