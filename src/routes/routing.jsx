@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router';
-import Navbar from '../components/Navbar/index';
+import NavigationBar from '../components/Navbar/index';
 import Footer from '../components/Footer/index';
 import Home from '../pages/Home/index';
 import Aboutus from '../pages/Aboutus/index';
@@ -17,7 +17,7 @@ const Routing = () => {
 
     return (
         <div className="App">
-            {!isNotFound && <Navbar />} {/* Render Navbar only if not on the NotFound page */}
+            {!isNotFound && <NavigationBar />} {/* Render Navbar only if not on the NotFound page */}
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/aboutus" element={<Aboutus />} />
