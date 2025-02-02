@@ -1,10 +1,11 @@
 import React from "react";
 import aboutus from "../../assets/Images/about-us.jpg";
 import { AboutPageText } from "./data";
+import './styles.css';
 
 export default function Aboutus() {
   return (
-    <div className="abouthome">
+    <div className="about-home">
       <div className="page-title-area">
         <h1>About Us</h1>
       </div>
@@ -19,7 +20,6 @@ export default function Aboutus() {
               <h4 className="mt-3">{AboutPageText.about_header}</h4>
               <p className="mt-3 text-justify">{AboutPageText.about_des1}</p>
               <p className="text-justify">{AboutPageText.about_des2}</p>
-
               <button className="btn readmore mt-3">Read More</button>
             </div>
           </div>

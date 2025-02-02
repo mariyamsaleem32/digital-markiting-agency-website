@@ -4,7 +4,7 @@ import contactimg from '../../assets/Images/cntact-img.jpg';
 import { AiOutlineAim, AiOutlineComment, AiOutlineFieldTime } from "react-icons/ai";
 import emailjs from 'emailjs-com';
 
-export default function Contactus() {
+const Contactus = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,10 +25,10 @@ export default function Contactus() {
 
     emailjs
       .sendForm(
-        'your_service_id',   // Replace with your Service ID from EmailJS
-        'your_template_id',   // Replace with your Template ID from EmailJS
-        e.target,
-        'your_user_id'        // Replace with your User ID from EmailJS
+        'service_r2woz0o',  // Your Service ID
+        'your_template_id',  // Replace with your actual Template ID from EmailJS
+        e.target,            // The form element (e.target will contain form data)
+        'mTqm4hTXowGZysipF'  // Your User ID
       )
       .then(
         (result) => {
@@ -179,4 +179,6 @@ export default function Contactus() {
       </div>
     </div>
   );
-}
+};
+
+export default Contactus;
