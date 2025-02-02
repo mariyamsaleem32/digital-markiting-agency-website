@@ -22,13 +22,19 @@ const Contactus = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+  
+    // Check if all fields are filled out before sending
+    if (!formData.name || !formData.email || !formData.number || !formData.subject || !formData.message) {
+      alert("Please fill in all the fields.");
+      return;
+    }
+  
     emailjs
       .sendForm(
-        'service_r2woz0o',  // Your Service ID
-        'your_template_id',  // Replace with your actual Template ID from EmailJS
-        e.target,            // The form element (e.target will contain form data)
-        'mTqm4hTXowGZysipF'  // Your User ID
+        'service_r2woz0o', // Your Service ID
+        'template_evdou6n', // Your Template ID (this is the one you just mentioned)
+        e.target,           // The form element (e.target will contain form data)
+        'mTqm4hTXowGZysipF' // Your User ID
       )
       .then(
         (result) => {
@@ -41,6 +47,8 @@ const Contactus = () => {
         }
       );
   };
+  
+  
 
   return (
     <div className="contact">
