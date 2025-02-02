@@ -32,7 +32,7 @@ const Contactus = () => {
     emailjs
       .sendForm(
         'service_r2woz0o', // Your Service ID
-        'template_evdou6n', // Your Template ID (this is the one you just mentioned)
+        'template_evdou6n', // Your Template ID
         e.target,           // The form element (e.target will contain form data)
         'mTqm4hTXowGZysipF' // Your User ID
       )
@@ -128,6 +128,7 @@ const Contactus = () => {
                   </div>
                   <div className="col-lg-12 col-md-6">
                     <div className="form-group">
+                      <br />
                       <input
                         type="text"
                         name="number"
@@ -140,6 +141,7 @@ const Contactus = () => {
                   </div>
                   <div className="col-lg-12 col-md-6">
                     <div className="form-group">
+                      <br />
                       <input
                         type="text"
                         name="subject"
@@ -152,6 +154,7 @@ const Contactus = () => {
                   </div>
                   <div className="col-lg-12 col-md-12">
                     <div className="form-group">
+                      <br />
                       <textarea
                         name="message"
                         cols="30"
@@ -164,6 +167,7 @@ const Contactus = () => {
                     </div>
                   </div>
                   <div className="col-lg-12 col-sm-12">
+                    <br />
                     <button type="submit" className="btn readmore">
                       Send Message
                     </button>
