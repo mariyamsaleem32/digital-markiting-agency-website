@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router";
 import { FaBars } from "react-icons/fa"; 
 import './styles.css';
-import { Button, Navbar, Nav, NavDropdown, Container } from "react-bootstrap"; 
-import "bootstrap/dist/css/bootstrap.min.css"; 
-import "antd/dist/antd.css"; 
+import { Button, Navbar, Nav, Container } from "react-bootstrap";  
+// import "antd/dist/antd.css"; 
 
 const Navbar = () => {
   return(
+    <>
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="nav-bg p-3">
         <Container>
           <Navbar.Brand as={Link} to="/">
@@ -31,6 +31,7 @@ const Navbar = () => {
           </Button>
         </Container>
       </Navbar>
+      </>
     );
 };
 
