@@ -1,6 +1,7 @@
 import './styles.css';
 import { Link } from 'react-router'
 import { useState } from 'react'; 
+import logo from '../../assets/Images/logo.png'
 
 const Navbar = () => {
   // State for toggling the mobile menu visibility

@@ -30,12 +30,12 @@ const Routing = () => {
                 <Route path="/team" element={<Team />} />
                 <Route path="/contactus" element={<Contactus />} />
                 <Route path="/faqs" element={<FAQs />} />
-                <Route path="/creativity" element={<Creativity />} />
-                <Route path="/custom" element={<Custom />} />
-                <Route path="/mobile" element={<Mobile />} />
-                <Route path="/markiting" element={<Markiting />} />
-                <Route path="/software" element={<Software />} />
-                <Route path="/animation" element={<Animation />} />
+                <Route path="/creative-identity" element={<Creativity />} />
+                <Route path="/custom-website" element={<Custom />} />
+                <Route path="/mobile-apps" element={<Mobile />} />
+                <Route path="/digital-marketing" element={<Markiting />} />
+                <Route path="/software-development" element={<Software />} />
+                <Route path="/vedio-animation" element={<Animation />} />
                 <Route path="*" element={<Notfound />} />
             </Routes>
             {!isNotFound && <Footer />} {/* Render Footer only if not on the NotFound page */}

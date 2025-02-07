@@ -1,69 +1,69 @@
-import React from 'react';
 import { Link } from 'react-router';
-import { FaFacebookSquare, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
-import AppQR from '../QRcode';
-import './styles.css';
+import { FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
-    return (
-        <>
-          <div className="footer-area">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-3">
-                 <AppQR/>
-                </div>
-                <div className="col-md-3 services_col">
-                  <div className="inner_col">
-                    <p className="footer-h">Services</p>
-                    <ul>
-                      <li><Link to="/creativity" className="hover">Creative Identity</Link></li>
-                      <li><Link to="/custom" className="hover">Custom Website</Link></li>
-                      <li><Link to="/markiting" className="hover">Digital Marketing</Link></li>
-                      <li><Link to="/mobile" className="hover">Mobile Apps</Link></li>
-                      <li><Link to="/software" className="hover">Software Development</Link></li>
-                      <li><Link to="/animation" className="hover">Video Animation</Link></li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-md-3 quickLinks_col">
-                  <div className="inner_col">
-                    <p className="footer-h">Quick Links</p>
-                    <ul>
-                      <li><Link to={"/aboutus"}  className="hover">About</Link></li>
-                      <li><Link to={"/contactus"} className="hover">Contact us</Link></li>
-                      <li><Link to={'/faqs'} className="hover">FAQ</Link></li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <p className="footer-h">Social Links</p>
-                  <ul className="social_media_icons">
-                    <li>
-                      <a href="https://www.facebook.com/profile.php?id=100090462638801" target="_blank" rel="noopener noreferrer">
-                        <FaFacebookSquare className="icon" /> <span>Facebook</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://wa.me/923101046562" target="_blank" rel="noopener noreferrer">
-                        <FaWhatsapp className="icon" /> <span>WhatsApp</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/in/mariyam-saleem-a227052b7//" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin className="icon" /> <span>LinkedIn</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+  return (
+    <>
+      <div className="bg-dark mt-5 py-5">
+        <div className="container py-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div>
+              <h4 className="text-white mb-4">Our Office</h4>
+              <p className="mb-2 text-white"><i className="mr-3"><FaMapMarkerAlt /></i>123 Street, New York, USA</p>
+              <p className="mb-2 text-white"><i className="mr-3"><FaPhoneAlt /></i>+012 345 67890</p>
+              <p className="mb-2 text-white"><i className="mr-3"><FaEnvelope /></i>info@example.com</p>
+              <div className="flex pt-3">
+                <Link className="bg-light text-dark p-2 rounded-full mr-2" to="#"><FaTwitter /></Link>
+                <Link className="bg-light text-dark p-2 rounded-full mr-2" to="#"><FaFacebookF /></Link>
+                <Link className="bg-light text-dark p-2 rounded-full mr-2" to="#"><FaYoutube /></Link>
+                <Link className="bg-light text-dark p-2 rounded-full mr-2" to="#"><FaLinkedinIn /></Link>
+              </div>
+            </div>
+            <div>
+              <h4 className="text-white mb-4">Quick Links</h4>
+              <Link className="text-light hover:text-white mb-2 block" to="/about">About Us</Link>
+              <Link className="text-light hover:text-white mb-2 block" to="/contact">Contact Us</Link>
+              <Link className="text-light hover:text-white mb-2 block" to="/services">Our Services</Link>
+              <Link className="text-light hover:text-white mb-2 block" to="/terms">Terms &amp; Condition</Link>
+              <Link className="text-light hover:text-white mb-2 block" to="/support">Support</Link>
+            </div>
+            <div>
+              <h4 className="text-white mb-4">Business Hours</h4>
+              <p className="text-white mb-1">Monday - Friday</p>
+              <h6 className="text-light">09:00 am - 07:00 pm</h6>
+              <p className="text-white mb-1">Saturday</p>
+              <h6 className="text-light">09:00 am - 12:00 pm</h6>
+              <p className="text-white mb-1">Sunday</p>
+              <h6 className="text-light">Closed</h6>
+            </div>
+            <div>
+              <h4 className="text-white mb-4">Newsletter</h4>
+              <p className="text-white">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+              <div className="relative w-full">
+                <input className="w-full py-3 px-4 bg-transparent border border-gray-300 rounded-md" type="text" placeholder="Your email" />
+                <button type="button" className="absolute top-0 right-0 mt-2 mr-2 py-2 px-4 bg-light text-dark rounded-md">SignUp</button>
               </div>
             </div>
           </div>
-          <div className="copy-right-area">
-            <p>© your Technologies. All Rights Reserved.</p>
+        </div>
+      </div>
+      <div className="bg-gray-800 py-4">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="text-white">
+              © <Link className="text-light hover:text-white" to="#">Your Site Name</Link>, All Rights Reserved.
+            </div>
+            <div className="text-center text-white text-sm">
+              Developed By <Link className="text-light hover:text-white" target="_blank" to="https://haassaaaannnn.netlify.app/">HASSAN</Link>
+            </div>
+            <div className="text-right text-white text-sm">
+              Template author's <Link className="text-light hover:text-white" to="#">HTMLcodex</Link>
+            </div>
           </div>
-        </>
-    );
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Footer;

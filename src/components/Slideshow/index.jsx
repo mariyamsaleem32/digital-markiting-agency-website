@@ -12,11 +12,12 @@ function Slideshow({ subheadering1, heading, subheading }) {
         <div className="row">
           <div className="col-lg-6 col-md-6 col-12">
             <div className="slideshow-text">
-              <h6>{slideshowText.subheadering1}</h6>
+              <h6 className="head-text">{slideshowText.subheadering1}</h6>
               <h3>{slideshowText.heading}</h3>
               <p>{slideshowText.subheading}</p>
               <button className="btn about-btn mt-5 mb-5">
-                <Link className="btn-link" to={'/aboutus'} style={{color:'black', textDecoration:'none'}}>About Us</Link>
+                <Link className="btn-link" to={'/aboutus'} style={{color:'black', textDecoration:'none'}}>About Us
+                </Link>
                 </button>
             </div>
           </div>

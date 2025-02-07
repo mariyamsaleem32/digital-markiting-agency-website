@@ -23,7 +23,7 @@ function Services() {
                 <FaPalette className="icon1" />
                 <h4>{ServicesText.services_box_title1}</h4>
                 <p>{ServicesText.services_box_des1}</p>
-                <button className="btn learn-more-btn"><Link to={'/creativity'}>Learn More</Link></button>
+                <button className="btn learn-more-btn"><Link to={'/creative-identity'}>Learn More</Link></button>
               </div>
             </div>
 
@@ -33,7 +33,7 @@ function Services() {
                 <FaLaptopCode className="icon2" />
                 <h4>{ServicesText.services_box_title2}</h4>
                 <p>{ServicesText.services_box_des2}</p>
-                <button className="btn learn-more-btn"><Link to={'/custom'}>Learn More</Link></button>
+                <button className="btn learn-more-btn"><Link to={'/custom-website'}>Learn More</Link></button>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ function Services() {
                 <FaBullhorn className="icon3" />
                 <h4>{ServicesText.services_box_title3}</h4>
                 <p>{ServicesText.services_box_des3}</p>
-                <button className="btn learn-more-btn"><Link to={'/markiting'}>Learn More</Link></button>
+                <button className="btn learn-more-btn"><Link to={'/digital-markiting'}>Learn More</Link></button>
               </div>
             </div>
 
@@ -53,7 +53,7 @@ function Services() {
                 <FaMobileAlt className="icon3" />
                 <h4>{ServicesText.services_box_title4}</h4>
                 <p>{ServicesText.services_box_des4}</p>
-                <button className="btn learn-more-btn"><Link to={'/mobile'}>Learn More</Link></button>
+                <button className="btn learn-more-btn"><Link to={'/mobile-apps'}>Learn More</Link></button>
               </div>
             </div>
 
@@ -63,7 +63,7 @@ function Services() {
                 <FaCogs className="icon2" />
                 <h4>{ServicesText.services_box_title5}</h4>
                 <p>{ServicesText.services_box_des5}</p>
-                <button className="btn learn-more-btn"><Link to={'/software'}>Learn More</Link></button>
+                <button className="btn learn-more-btn"><Link to={'/software-development'}>Learn More</Link></button>
               </div>
             </div>
 
@@ -73,7 +73,7 @@ function Services() {
                 <FaVideo className="icon1" />
                 <h4>{ServicesText.services_box_title6}</h4>
                 <p>{ServicesText.services_box_des6}</p>
-                <button className="btn learn-more-btn"><Link to={'/animation'}>Learn More</Link></button>
+                <button className="btn learn-more-btn"><Link to={'/vedio-animation'}>Learn More</Link></button>
               </div>
             </div>
           </div>

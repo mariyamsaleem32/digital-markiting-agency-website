@@ -10,13 +10,15 @@
 }
 .home .slideshow-text h3{
     color: #ffff;
-    font-size: 50px;
-    margin: 20px 0px 20px 0px;
+    font-size: 30px;
+    margin: 10px 0px 20px 0px;
+    font-style: oblique;
 }
 .home .slideshow-text h6{
-    color: #ffff;
+    color: #e6dada;
     font-size: 22px;
     margin: 140px 0px 10px 0px;
+    font-style: italic;
 }
 .home .slideshow-text p{
     color: #ffff;
@@ -43,4 +45,10 @@
     color: #000;
     background-color: #fff;
     cursor: pointer;
+}
+
+.head-text{
+    font-size: 30px;
+    color: #c4b1b1;
+    font-weight: 700;
 }
