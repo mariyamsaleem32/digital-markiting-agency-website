@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { FaFacebookSquare, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
+import AppQR from '../QRcode';
 import './styles.css';
 
 const Footer = () => {
@@ -10,20 +11,18 @@ const Footer = () => {
             <div className="container">
               <div className="row">
                 <div className="col-md-3">
-                  <h1>your brand name</h1>
-                  <p className="footer-col-1-h">MAKE SOMETHING</p>
-                  <p className="footer-col-1-p">YOU LOVE</p>
+                 <AppQR/>
                 </div>
                 <div className="col-md-3 services_col">
                   <div className="inner_col">
                     <p className="footer-h">Services</p>
                     <ul>
-                      <li><Link to="/creative-identity" className="hover">Creative Identity</Link></li>
-                      <li><Link to="/custom-website" className="hover">Custom Website</Link></li>
-                      <li><Link to="/digital-marketing" className="hover">Digital Marketing</Link></li>
-                      <li><Link to="/mobile-apps" className="hover">Mobile Apps</Link></li>
-                      <li><Link to="/software-development" className="hover">Software Development</Link></li>
-                      <li><Link to="/video-animation" className="hover">Video Animation</Link></li>
+                      <li><Link to="/creativity" className="hover">Creative Identity</Link></li>
+                      <li><Link to="/custom" className="hover">Custom Website</Link></li>
+                      <li><Link to="/markiting" className="hover">Digital Marketing</Link></li>
+                      <li><Link to="/mobile" className="hover">Mobile Apps</Link></li>
+                      <li><Link to="/software" className="hover">Software Development</Link></li>
+                      <li><Link to="/animation" className="hover">Video Animation</Link></li>
                     </ul>
                   </div>
                 </div>

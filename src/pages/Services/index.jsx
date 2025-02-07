@@ -23,7 +23,7 @@ function Services() {
                 <FaPalette className="icon1" />
                 <h4>{ServicesText.services_box_title1}</h4>
                 <p>{ServicesText.services_box_des1}</p>
-                <button className="btn learn-more-btn"><Link to={'/crativity'}>Learn More</Link></button>
+                <button className="btn learn-more-btn"><Link to={'/creativity'}>Learn More</Link></button>
               </div>
             </div>
 

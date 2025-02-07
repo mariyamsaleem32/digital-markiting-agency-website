@@ -30,7 +30,7 @@ const Routing = () => {
                 <Route path="/team" element={<Team />} />
                 <Route path="/contactus" element={<Contactus />} />
                 <Route path="/faqs" element={<FAQs />} />
-                <Route path="/crativity" element={<Creativity />} />
+                <Route path="/creativity" element={<Creativity />} />
                 <Route path="/custom" element={<Custom />} />
                 <Route path="/mobile" element={<Mobile />} />
                 <Route path="/markiting" element={<Markiting />} />

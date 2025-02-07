@@ -1,10 +1,10 @@
 import React from 'react'
-import  team1  from "../../assets/Images/team_1.jpg";
-import  team2  from "../../assets/Images/team_2.jpg";
-import  team3  from "../../assets/Images/team_3.jpg";
-import  team4  from "../../assets/Images/team_4.jpg";
-import  team5  from "../../assets/Images/team_5.jpg";
-import  team6  from "../../assets/Images/team_6.jpg";
+import  team1  from "../../assets/Images/team-1.jpeg";
+import  team2  from "../../assets/Images/team-2.jpeg";
+import  team3  from "../../assets/Images/team-3.jpeg";
+import  team4  from "../../assets/Images/team-4.jpeg";
+import  team5  from "../../assets/Images/team-5.jpeg";
+import  team6  from "../../assets/Images/team-6.jpeg";
 
 export default function Team() {
     return (
