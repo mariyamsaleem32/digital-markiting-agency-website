@@ -1,10 +1,11 @@
 import { Link } from 'react-router';
-import { FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
+import { FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import AppQR from '../QRcode';
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-dark mt-5 py-5">
+      <div className="bg-dark mt-1 py-5">
         <div className="container py-5">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             <div>
@@ -21,11 +22,10 @@ const Footer = () => {
             </div>
             <div>
               <h4 className="text-white mb-4">Quick Links</h4>
-              <Link className="text-light hover:text-white mb-2 block" to="/about">About Us</Link>
-              <Link className="text-light hover:text-white mb-2 block" to="/contact">Contact Us</Link>
+              <Link className="text-light hover:text-white mb-2 block" to="/aboutus">About Us</Link>
+              <Link className="text-light hover:text-white mb-2 block" to="/contactus">Contact Us</Link>
               <Link className="text-light hover:text-white mb-2 block" to="/services">Our Services</Link>
-              <Link className="text-light hover:text-white mb-2 block" to="/terms">Terms &amp; Condition</Link>
-              <Link className="text-light hover:text-white mb-2 block" to="/support">Support</Link>
+              <Link className="text-light hover:text-white mb-2 block" to="/faqs">Terms &amp; Condition</Link>
             </div>
             <div>
               <h4 className="text-white mb-4">Business Hours</h4>
@@ -37,12 +37,7 @@ const Footer = () => {
               <h6 className="text-light">Closed</h6>
             </div>
             <div>
-              <h4 className="text-white mb-4">Newsletter</h4>
-              <p className="text-white">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-              <div className="relative w-full">
-                <input className="w-full py-3 px-4 bg-transparent border border-gray-300 rounded-md" type="text" placeholder="Your email" />
-                <button type="button" className="absolute top-0 right-0 mt-2 mr-2 py-2 px-4 bg-light text-dark rounded-md">SignUp</button>
-              </div>
+             <AppQR/>
             </div>
           </div>
         </div>
