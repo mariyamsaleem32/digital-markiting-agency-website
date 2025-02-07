@@ -21,9 +21,9 @@ const Footer = () => {
                       <li><Link to="/creative-identity" className="hover">Creative Identity</Link></li>
                       <li><Link to="/custom-website" className="hover">Custom Website</Link></li>
                       <li><Link to="/digital-marketing" className="hover">Digital Marketing</Link></li>
-                      <li><Link to="/video-animation" className="hover">Video Animation</Link></li>
                       <li><Link to="/mobile-apps" className="hover">Mobile Apps</Link></li>
                       <li><Link to="/software-development" className="hover">Software Development</Link></li>
+                      <li><Link to="/video-animation" className="hover">Video Animation</Link></li>
                     </ul>
                   </div>
                 </div>

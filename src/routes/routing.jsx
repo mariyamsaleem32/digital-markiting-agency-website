@@ -9,6 +9,12 @@ import Services from '../pages/Services/index';
 import Contactus from '../pages/Contactus/index';
 import Notfound from '../pages/Notfound/index';
 import FAQs from '../components/FAQs';
+import Creativity from '../service-pages/creativity' 
+import Custom from '../service-pages/custom';
+import Mobile from '../service-pages/mobile';
+import Markiting from '../service-pages/markiting';
+import Software from '../service-pages/software';
+import Animation from '../service-pages/animation';
 
 const Routing = () => {
     const location = useLocation();
@@ -24,6 +30,12 @@ const Routing = () => {
                 <Route path="/team" element={<Team />} />
                 <Route path="/contactus" element={<Contactus />} />
                 <Route path="/faqs" element={<FAQs />} />
+                <Route path="/crativity" element={<Creativity />} />
+                <Route path="/custom" element={<Custom />} />
+                <Route path="/mobile" element={<Mobile />} />
+                <Route path="/markiting" element={<Markiting />} />
+                <Route path="/software" element={<Software />} />
+                <Route path="/animation" element={<Animation />} />
                 <Route path="*" element={<Notfound />} />
             </Routes>
             {!isNotFound && <Footer />} {/* Render Footer only if not on the NotFound page */}
