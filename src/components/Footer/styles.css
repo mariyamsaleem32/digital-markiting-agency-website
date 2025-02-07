@@ -1,52 +1,12 @@
-
-.footer-area {
-    background-color: #2C3E50;
-    color: #ecf0f1;
-    padding: 10px 0;  
-}
-
-.copy-right-area {
-    background-color: #34495e;
-    color: #bdc3c7;
-    padding: 10px 0;  
-    text-align: center;
-    font-size: 18px;  
-    font-weight: bold;
-}
-
-.social_media_icons {
-    display: flex;
-    gap: 10px; 
-    align-items: center;
-}
-.footer-h{
-    font-size: 27px;
-    font-style: italic;
-    font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
-    color: antiquewhite;
-    margin-left: 30px;
-    
-}
-li{
-    list-style-type: none;
-}
-
-li a{
+#link{
     text-decoration: none;
-    color: aliceblue;
 }
 
-li a :hover{
-    color: rgb(83, 83, 204);
+#margin{
+    margin: 2px;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 0 auto;
+i {
+    text-align: center;
+    background-color: aqua;
 }
-
-.hover:hover{
-    color: rgb(83, 83, 204);
-}
-

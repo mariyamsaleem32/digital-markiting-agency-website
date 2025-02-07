@@ -1,5 +1,5 @@
-import React from "react";
-import { HomePageText } from "./data";
+import { useState } from "react";
+import { HomePageText } from './data';  
 import Slideshow from "../../components/Slideshow";
 import "./style.css";
 import  team1  from "../../assets/Images/team-1.jpeg";
@@ -10,24 +10,15 @@ import  team5  from "../../assets/Images/team-5.jpeg";
 import  team6  from "../../assets/Images/team-6.jpeg";
 import  aboutus  from "../../assets/Images/about-us.jpg";
 import  test  from "../../assets/Images/test.jpg";
+import { FaPalette, FaLaptopCode, FaBullhorn, FaMobileAlt, FaCogs, FaVideo } from 'react-icons/fa';
+import { Link } from "react-router";
 
+function Home() {
+  const [showMore, setShowMore] = useState(false);
 
-import {
-  AiOutlineRocket,
-  AiOutlineSketch,
-  AiOutlineRise,
-  AiOutlineSend,
-  AiOutlineMail,
-  AiOutlineBlock,
-  AiOutlineNotification,
-  AiOutlineFileSearch,
-  AiOutlineTeam,
-  AiOutlineSync,
-  AiOutlineFundView,
-  AiOutlineProject,
-} from "react-icons/ai";
-
-function Home({ header, subheader, subheader1 }) {
+  const handleReadMore = () => {
+    setShowMore(!showMore);
+  };
   return (
     <>
       <section>
@@ -40,84 +31,98 @@ function Home({ header, subheader, subheader1 }) {
                 <img src={aboutus} className="img-fluid mt-5 pt-5" alt="aboutus" />
               </div>
               <div className="col-lg-6 col-md-6 col-12">
-                <div className="abouthome">
-                  <h6 className="mt-3">{HomePageText.about_subheader}</h6>
-                  <h4 className="mt-3">{HomePageText.about_header}</h4>
-                  <p className="mt-3 text-justify">{HomePageText.about_des1}</p>
-                  <p className="text-justify">{HomePageText.about_des2}</p>
-
-                  <button className="btn readmore mt-3">Read More</button>
-                </div>
-              </div>
+      <div className="abouthome">
+        <h6 className="mt-3">{HomePageText.about_subheader}</h6>
+        <h4 className="mt-3">{HomePageText.about_header}</h4>
+        <p className="mt-3 text-justify">{HomePageText.about_des1}</p>
+        <p className="text-justify">{HomePageText.about_des2}</p>
+        {showMore && (
+          <>
+            <p className="text-justify">{HomePageText.about_des3}</p>
+            <p className="text-justify">{HomePageText.about_des4}</p>
+          </>
+        )}
+        <button className="btn readmore mt-3" onClick={handleReadMore}>
+          {showMore ? 'Read Less' : 'Read More'}
+        </button>
+      </div>
+    </div>
             </div>
           </div>
         </div>
 
-        {/* Header 3 services */}
-        <div className="serviceshome">
-          <div className="container">
-            <div className="servicesheader">
-              <h6>{HomePageText.serviceshome_subheader}</h6>
-              <h4>{HomePageText.serviceshome_header}</h4>
-              <p>{HomePageText.serviceshome_subheader1}</p>
-            </div>
-            <div className="row">
-              <div className="col-lg-4 col-md-4 col-6">
-                <div className="services-box-home m-3">
-                  <AiOutlineNotification className="icon1" />
-                  <h4>{HomePageText.services_box_title1}</h4>
-                  <p>{HomePageText.services_box_des}</p>
-                  <button className="btn learn-more-btn">Learn More</button>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-4 col-6">
-                <div className="services-box-home m-3">
-                  <AiOutlineFundView className="icon2" />
-                  <h4>{HomePageText.services_box_title2}</h4>
-                  <p>{HomePageText.services_box_des}</p>
-                  <button className="btn learn-more-btn">Learn More</button>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-4 col-6">
-                <div className="services-box-home m-3">
-                  <AiOutlineFileSearch className="icon3" />
-                  <h4>{HomePageText.services_box_title3}</h4>
-                  <p>{HomePageText.services_box_des}</p>
-                  <button className="btn learn-more-btn">Learn More</button>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-4 col-6">
-                <div className="services-box-home m-3">
-                  <AiOutlineTeam className="icon3" />
-                  <h4>{HomePageText.services_box_title4}</h4>
-                  <p>{HomePageText.services_box_des}</p>
-                  <button className="btn learn-more-btn">Learn More</button>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-4 col-6">
-                <div className="services-box-home m-3">
-                  <AiOutlineProject className="icon2" />
-                  <h4>{HomePageText.services_box_title5}</h4>
-                  <p>{HomePageText.services_box_des}</p>
-                  <button className="btn learn-more-btn">Learn More</button>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-4 col-6">
-                <div className="services-box-home m-3">
-                  <AiOutlineSync className="icon1" />
-                  <h4>{HomePageText.services_box_title6}</h4>
-                  <p>{HomePageText.services_box_des}</p>
-                  <button className="btn learn-more-btn">Learn More</button>
-                </div>
-              </div>
-            </div>
-          </div>
+   {/* Header 3 services */}
+<div className="serviceshome">
+  <div className="container">
+    <div className="servicesheader">
+      <h6>{HomePageText.serviceshome_subheader}</h6>
+      <h4>{HomePageText.serviceshome_header}</h4>
+      <p>{HomePageText.serviceshome_subheader1}</p>
+    </div>
+    <div className="row">
+      {/* Creative Identity */}
+      <div className="col-lg-4 col-md-4 col-6">
+        <div className="services-box-home m-3">
+          <FaPalette className="icon1" />
+          <h4>{HomePageText.services_box_title1}</h4>
+          <p>{HomePageText.services_box_des1}</p>
+          <button className="btn learn-more-btn"><Link to={'/creative-identity'}>Learn More</Link></button>
         </div>
+      </div>
+
+      {/* Custom Website */}
+      <div className="col-lg-4 col-md-4 col-6">
+        <div className="services-box-home m-3">
+          <FaLaptopCode className="icon2" />
+          <h4>{HomePageText.services_box_title2}</h4>
+          <p>{HomePageText.services_box_des2}</p>
+          <button className="btn learn-more-btn"><Link to={'/custom-website'}>Learn More</Link></button>
+        </div>
+      </div>
+
+      {/* Digital Marketing */}
+      <div className="col-lg-4 col-md-4 col-6">
+        <div className="services-box-home m-3">
+          <FaBullhorn className="icon3" />
+          <h4>{HomePageText.services_box_title3}</h4>
+          <p>{HomePageText.services_box_des3}</p>
+          <button className="btn learn-more-btn"><Link to={'/digital-markiting'}>Learn More</Link></button>
+        </div>
+      </div>
+
+      {/* Mobile Apps */}
+      <div className="col-lg-4 col-md-4 col-6">
+        <div className="services-box-home m-3">
+          <FaMobileAlt className="icon3" />
+          <h4>{HomePageText.services_box_title4}</h4>
+          <p>{HomePageText.services_box_des4}</p>
+          <button className="btn learn-more-btn"><Link to={'/mobile-apps'}>Learn More</Link></button>
+        </div>
+      </div>
+
+      {/* Software Development */}
+      <div className="col-lg-4 col-md-4 col-6">
+        <div className="services-box-home m-3">
+          <FaCogs className="icon2" />
+          <h4>{HomePageText.services_box_title5}</h4>
+          <p>{HomePageText.services_box_des5}</p>
+          <button className="btn learn-more-btn"><Link to={'/software-development'}>Learn More</Link></button>
+        </div>
+      </div>
+
+      {/* Video Animation */}
+      <div className="col-lg-4 col-md-4 col-6">
+        <div className="services-box-home m-3">
+          <FaVideo className="icon1" />
+          <h4>{HomePageText.services_box_title6}</h4>
+          <p>{HomePageText.services_box_des6}</p>
+          <button className="btn learn-more-btn"><Link to={'/vedio-animation'}>Learn More</Link></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
         {/* Header 4 test */}
         <div className="home-test">
@@ -162,10 +167,8 @@ function Home({ header, subheader, subheader1 }) {
                   <h6>OUR TEAM</h6>
                   <h4>We Help to Acheive Your Business Goal</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                  At visualimagery, our team is the heart of everything we do. We are a diverse group of digital marketing experts, creative thinkers, and problem solvers, all united by a passion for helping businesses grow. From strategists and designers to content creators and data analysts, each team member brings their unique skills and insights to the table, ensuring that your brand gets the attention it deserves. Together, we work collaboratively to deliver innovative solutions and outstanding results for every client we serve.
                   </p>
-                  <button className="btn learn-more-btn">View All</button>
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-6">

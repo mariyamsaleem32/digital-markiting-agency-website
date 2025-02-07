@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
-import { FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaWhatsapp, FaFacebookF, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram } from 'react-icons/fa';
 import AppQR from '../QRcode';
+import './styles.css'
 
 const Footer = () => {
   return (
@@ -10,22 +11,21 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             <div>
               <h4 className="text-white mb-4">Our Office</h4>
-              <p className="mb-2 text-white"><i className="mr-3"><FaMapMarkerAlt /></i>123 Street, New York, USA</p>
-              <p className="mb-2 text-white"><i className="mr-3"><FaPhoneAlt /></i>+012 345 67890</p>
-              <p className="mb-2 text-white"><i className="mr-3"><FaEnvelope /></i>info@example.com</p>
+              <p className="mb-2 text-white"><i className="mr-"><FaMapMarkerAlt /></i>karachi pakistan</p>
+              <p className="mb-2 text-white"><i className="mr-3"><FaPhoneAlt /></i>0320 7707187</p>
+              <p className="mb-2 text-white"><i className="mr-3"><FaEnvelope /></i>info.visualimagery@gmail.com</p>
               <div className="flex pt-3">
-                <Link className="bg-light text-dark p-2 rounded-full mr-2" to="#"><FaTwitter /></Link>
-                <Link className="bg-light text-dark p-2 rounded-full mr-2" to="#"><FaFacebookF /></Link>
-                <Link className="bg-light text-dark p-2 rounded-full mr-2" to="#"><FaYoutube /></Link>
-                <Link className="bg-light text-dark p-2 rounded-full mr-2" to="#"><FaLinkedinIn /></Link>
+                <Link id='margin' className="bg-light text-dark p-2 rounded-full mr-3" to="https://wa.me/92 313 2403968" target="_blank"><FaWhatsapp /></Link>
+                <Link id='margin' className="bg-light text-dark p-2 rounded-full mr-2" to="https://www.facebook.com/profile.php?id=100090462638801" target="_blank" rel="noopener noreferrer"><FaFacebookF /></Link>
+                <Link id='margin' className="bg-light text-dark p-2 rounded-full mr-2" to="https://www.instagram.com/visualimagery11?fbclid=IwY2xjawITOe1leHRuA2FlbQIxMAABHSRpTx8xSx6Z4DOuNJgOtPq5IWhxmp1qvJCG7cPeGPTwc-bqT04SMtFDJg_aem_xCAlOlMNtOgcizCRlBhLeA" target="_blank"><FaInstagram/></Link>
               </div>
             </div>
             <div>
               <h4 className="text-white mb-4">Quick Links</h4>
-              <Link className="text-light hover:text-white mb-2 block" to="/aboutus">About Us</Link>
-              <Link className="text-light hover:text-white mb-2 block" to="/contactus">Contact Us</Link>
-              <Link className="text-light hover:text-white mb-2 block" to="/services">Our Services</Link>
-              <Link className="text-light hover:text-white mb-2 block" to="/faqs">Terms &amp; Condition</Link>
+              <Link id='link' className="text-light hover:text-white mb-2 block" to="/aboutus">About Us</Link>
+              <Link id='link' className="text-light hover:text-white mb-2 block" to="/contactus">Contact Us</Link>
+              <Link id='link' className="text-light hover:text-white mb-2 block" to="/services">Our Services</Link>
+              <Link id='link' className="text-light hover:text-white mb-2 block" to="/faqs">Terms &amp; Condition</Link>
             </div>
             <div>
               <h4 className="text-white mb-4">Business Hours</h4>
@@ -42,19 +42,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-800 py-4">
+      <div className="bg-gray-800 py-2">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="text-white">
-              © <Link className="text-light hover:text-white" to="#">Your Site Name</Link>, All Rights Reserved.
-            </div>
-            <div className="text-center text-white text-sm">
-              Developed By <Link className="text-light hover:text-white" target="_blank" to="https://haassaaaannnn.netlify.app/">HASSAN</Link>
-            </div>
-            <div className="text-right text-white text-sm">
-              Template author's <Link className="text-light hover:text-white" to="#">HTMLcodex</Link>
-            </div>
-          </div>
+        <p style={{textAlign:'center',color:'white',lineHeight:'2'}}>@your site all right reseved</p>
         </div>
       </div>
     </>
@@ -62,3 +52,4 @@ const Footer = () => {
 }
 
 export default Footer;
+
