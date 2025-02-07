@@ -16,29 +16,29 @@ const Footer = () => {
                 </div>
                 <div className="col-md-3 services_col">
                   <div className="inner_col">
-                    <p className="footer-h">services</p>
+                    <p className="footer-h">Services</p>
                     <ul>
-                      <li><Link to="/creative-identity">Creative Identity</Link></li>
-                      <li><Link to="/custom-website">Custom Website</Link></li>
-                      <li><Link to="/digital-marketing">Digital Marketing</Link></li>
-                      <li><Link to="/video-animation">Video Animation</Link></li>
-                      <li><Link to="/mobile-apps">Mobile Apps</Link></li>
-                      <li><Link to="/software-development">Software Development</Link></li>
+                      <li><Link to="/creative-identity" className="hover">Creative Identity</Link></li>
+                      <li><Link to="/custom-website" className="hover">Custom Website</Link></li>
+                      <li><Link to="/digital-marketing" className="hover">Digital Marketing</Link></li>
+                      <li><Link to="/video-animation" className="hover">Video Animation</Link></li>
+                      <li><Link to="/mobile-apps" className="hover">Mobile Apps</Link></li>
+                      <li><Link to="/software-development" className="hover">Software Development</Link></li>
                     </ul>
                   </div>
                 </div>
                 <div className="col-md-3 quickLinks_col">
                   <div className="inner_col">
-                    <p className="footer-h">quick links</p>
+                    <p className="footer-h">Quick Links</p>
                     <ul>
-                      <li><Link to={"/aboutus"}>About</Link></li>
-                      <li><Link to={"/contactus"}>Contact us</Link></li>
-                      <li><Link to={'/faqs'}>FAQ</Link></li>
+                      <li><Link to={"/aboutus"}  className="hover">About</Link></li>
+                      <li><Link to={"/contactus"} className="hover">Contact us</Link></li>
+                      <li><Link to={'/faqs'} className="hover">FAQ</Link></li>
                     </ul>
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <p className="footer-h">Social links</p>
+                  <p className="footer-h">Social Links</p>
                   <ul className="social_media_icons">
                     <li>
                       <a href="https://www.facebook.com/profile.php?id=100090462638801" target="_blank" rel="noopener noreferrer">

@@ -8,7 +8,6 @@ import Team from '../pages/Team/index';
 import Services from '../pages/Services/index';
 import Contactus from '../pages/Contactus/index';
 import Notfound from '../pages/Notfound/index';
-import Price from '../pages/Price/index';
 import FAQs from '../components/FAQs';
 
 const Routing = () => {
@@ -23,9 +22,8 @@ const Routing = () => {
                 <Route path="/aboutus" element={<Aboutus />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/team" element={<Team />} />
-                <Route path="/price" element={<Price />} />
                 <Route path="/contactus" element={<Contactus />} />
-                <Route path="/faq" element={<FAQs />} />
+                <Route path="/faqs" element={<FAQs />} />
                 <Route path="*" element={<Notfound />} />
             </Routes>
             {!isNotFound && <Footer />} {/* Render Footer only if not on the NotFound page */}
