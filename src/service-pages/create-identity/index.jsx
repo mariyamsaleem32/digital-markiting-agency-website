@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroSection from './heroSection';
+import SubHero from './sub-hero'
 import Offer from './offer';
 import ChooseUs from './chose';
 import "./styles.css";
@@ -7,7 +8,8 @@ import "./styles.css";
 const Creativity = () => {
     return (
         <>
-            <HeroSection className='hero-sec' />
+            <HeroSection />
+            <SubHero/>
             <Offer/>
             <ChooseUs/>
         </>

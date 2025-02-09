@@ -44,7 +44,7 @@ const services = [
   },
 ];
 
-const OFFER = () => {
+const Offer = () => {
   return (
     <>
       <div className="container">
