@@ -7,7 +7,7 @@ body {
   }
   
   /* Hero Section */
-  .hero-sec{
+  .hero-container {
     background: url('../../assets/Images/hero-bg.jpg');
     text-align: center;
     padding: 100px 20px;

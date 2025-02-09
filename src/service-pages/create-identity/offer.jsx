@@ -2,7 +2,6 @@ import React from "react";
 import { Card, Row, Col, Typography } from "antd";
 import "antd/dist/reset.css";
 import "./styles.css";
-import HeroSection from "./heroSection";
 
 const { Title, Paragraph } = Typography;
 
@@ -11,7 +10,7 @@ const services = [
     title: "Custom Logos",
     description:
       "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image: "../../assets/images/coustom-logo.jpg",
+    image: "logo.jpg",
   },
   {
     title: "Appealing Brochures",
@@ -45,10 +44,9 @@ const services = [
   },
 ];
 
-const Offer = () => {
+const OFFER = () => {
   return (
     <>
-      <HeroSection />
       <div className="container">
         <Title level={2} className="heading">
           What Do <span className="highlight">WE OFFER</span>
