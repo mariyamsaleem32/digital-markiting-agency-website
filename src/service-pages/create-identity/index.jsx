@@ -1,11 +1,14 @@
 import React from 'react';
+import HeroSection from './heroSection';
 import Offer from './offer';
+import ChooseUs from './chose';
 
 const Creativity = () => {
     return (
         <>
-            hello creative 
+            <HeroSection/>
             <Offer/>
+            <ChooseUs/>
         </>
     );
 }

@@ -2,15 +2,16 @@ import React from "react";
 import { Card, Row, Col, Typography } from "antd";
 import "antd/dist/reset.css";
 import "./styles.css";
+import HeroSection from "./heroSection";
 
 const { Title, Paragraph } = Typography;
 
-const Offer = [
+const services = [
   {
     title: "Custom Logos",
     description:
       "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image: "logo.jpg",
+    image: "../../assets/images/coustom-logo.jpg",
   },
   {
     title: "Appealing Brochures",
@@ -44,30 +45,33 @@ const Offer = [
   },
 ];
 
-const Services = () => {
+const Offer = () => {
   return (
-    <div className="container">
-      <Title level={2} className="heading">
-        What Do <span className="highlight">WE OFFER</span>
-      </Title>
-      <Paragraph className="subheading">
-        We offer satisfaction to its fullest. The work we do is the perfect example of how a digital agency should operate.
-      </Paragraph>
-      <Row gutter={[16, 16]}>
-        {services.map((service, index) => (
-          <Col xs={24} sm={12} md={12} lg={8} key={index}>
-            <Card
-              hoverable
-              cover={<img alt={service.title} src={service.image} className="card-image" />}
-              className="custom-card"
-            >
-              <Title level={4}>{service.title}</Title>
-              <Paragraph>{service.description}</Paragraph>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </div>
+    <>
+      <HeroSection />
+      <div className="container">
+        <Title level={2} className="heading">
+          What Do <span className="highlight">WE OFFER</span>
+        </Title>
+        <Paragraph className="subheading">
+          We offer satisfaction to its fullest. The work we do is the perfect example of how a digital agency should operate.
+        </Paragraph>
+        <Row gutter={[16, 16]}>
+          {services.map((service, index) => (
+            <Col xs={24} sm={12} md={12} lg={8} key={index}>
+              <Card
+                hoverable
+                cover={<img alt={service.title} src={service.image} className="card-image" />}
+                className="custom-card"
+              >
+                <Title level={4}>{service.title}</Title>
+                <Paragraph>{service.description}</Paragraph>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </div>
+    </>
   );
 };
 
