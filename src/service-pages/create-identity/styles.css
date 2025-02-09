@@ -7,13 +7,15 @@ body {
   }
   
   /* Hero Section */
-  .hero-section {
-    background: url('../../assets/Images/hero-bg.jpg') no-repeat center center/cover;
+  .hero-sec{
+    background: url('../../assets/Images/hero-bg.jpg');
     text-align: center;
     padding: 100px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
     color: white;
   }
-  
   .hero-section h1 {
     font-size: 48px;
     font-weight: bold;
