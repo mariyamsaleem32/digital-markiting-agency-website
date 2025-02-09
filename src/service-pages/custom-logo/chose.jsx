@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Row, Col } from "antd";
-import "./styles.css";
+import "./custom.css";
 import { BulbOutlined, ExperimentOutlined, ReloadOutlined, SyncOutlined, RocketOutlined, ThunderboltOutlined } from "@ant-design/icons";
 
 const { Title, Paragraph } = Typography;

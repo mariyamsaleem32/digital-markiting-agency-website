@@ -1,10 +1,18 @@
 import React from 'react';
+import HeroSection from './heroSection';
+import SubHero from './sub-hero'
+import Offer from './offer';
+import ChooseUs from './chose';
+import "./custom.css";
 
 const Custom = () => {
     return (
-        <div>
-            hi custom
-        </div>
+        <>
+        <HeroSection />
+        <SubHero/>
+        <Offer/>
+        <ChooseUs/>
+    </>
     );
 }
 

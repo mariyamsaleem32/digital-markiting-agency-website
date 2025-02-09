@@ -10,3 +10,12 @@ i {
     text-align: center;
     background-color: aqua;
 }
+
+p{
+    cursor: pointer;
+}
+
+.no-underline {
+    text-decoration: none;
+  }
+  

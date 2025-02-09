@@ -142,7 +142,7 @@ body {
 .hero-container {
     position: relative;
     height: 500px;
-    background-image: url('../../assets//Images/hero-bg.jpg');
+    background-image: url('../../assets//Images/custom-bg.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

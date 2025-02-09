@@ -86,7 +86,7 @@ function Home() {
           <FaBullhorn className="icon3" />
           <h4>{HomePageText.services_box_title3}</h4>
           <p>{HomePageText.services_box_des3}</p>
-          <button className="btn learn-more-btn"><Link to={'/digital-markiting'}>Learn More</Link></button>
+          <button className="btn learn-more-btn"><Link to={'/digital-marketing'}>Learn More</Link></button>
         </div>
       </div>
 

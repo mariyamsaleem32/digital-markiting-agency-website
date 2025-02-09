@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Row, Col, Typography } from "antd";
 import "antd/dist/reset.css";
-import "./styles.css";
+import "./custom.css";
 import coustomLogo from '../../assets/Images/coustom-logo.jpg';
 import brouchImg from '../../assets/Images/brouch.jpg';
 import stationaryDesign from '../../assets/Images/stationary-design.jpg';

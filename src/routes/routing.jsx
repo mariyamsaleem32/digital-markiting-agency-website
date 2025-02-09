@@ -12,7 +12,7 @@ import FAQs from '../components/FAQs';
 import Creativity from '../service-pages/create-identity/index' 
 import Custom from '../service-pages/custom-logo/index';
 import Mobile from '../service-pages/mobile-apps/index';
-import Markiting from '../service-pages/digital-marketing/index';
+import Marketing from '../service-pages/digital-marketing/index';
 import Software from '../service-pages/software-development/index';
 import Animation from '../service-pages/vedio-animation/index';
 
@@ -33,7 +33,7 @@ const Routing = () => {
                 <Route path="/creative-identity" element={<Creativity />} />
                 <Route path="/custom-website" element={<Custom />} />
                 <Route path="/mobile-apps" element={<Mobile />} />
-                <Route path="/digital-marketing" element={<Markiting />} />
+                <Route path="/digital-marketing" element={<Marketing />} />
                 <Route path="/software-development" element={<Software />} />
                 <Route path="/vedio-animation" element={<Animation />} />
                 <Route path="*" element={<Notfound />} />

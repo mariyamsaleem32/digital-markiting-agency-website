@@ -27,15 +27,18 @@ const Footer = () => {
               <Link id='link' className="text-light hover:text-white mb-2 block" to="/services">Our Services</Link>
               <Link id='link' className="text-light hover:text-white mb-2 block" to="/faqs">Terms &amp; Condition</Link>
             </div>
+            
             <div>
-              <h4 className="text-white mb-4">Business Hours</h4>
-              <p className="text-white mb-1">Monday - Friday</p>
-              <h6 className="text-light">09:00 am - 07:00 pm</h6>
-              <p className="text-white mb-1">Saturday</p>
-              <h6 className="text-light">09:00 am - 12:00 pm</h6>
-              <p className="text-white mb-1">Sunday</p>
-              <h6 className="text-light">Closed</h6>
-            </div>
+  <h4 className="text-white mb-4">Our Services</h4>
+  <p><Link to={'/creative-identity'} className="text-white mb-1 no-underline">Creative Identity</Link></p>
+  <p><Link to={'/custom-website'} className="text-white mb-1 no-underline">Custom Website</Link></p>
+  <p><Link to={'/digital-marketing'} className="text-white mb-1 no-underline">Digital Marketing</Link></p>
+  <p><Link to={'/mobile-apps'} className="text-white mb-1 no-underline">Mobile Apps</Link></p>
+  <p><Link to={'/software-development'} className="text-white mb-1 no-underline">Software Development</Link></p>
+  <p><Link to={'/vedio-animation'} className="text-white mb-1 no-underline">Video Animation</Link></p>
+</div>
+
+
             <div>
              <AppQR/>
             </div>
@@ -43,8 +46,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-gray-800 py-2">
-        <div className="container">
-        <p style={{textAlign:'center',color:'white',lineHeight:'2'}}>@your site all right reseved</p>
+        <div className="footer-container">
+        <p style={{textAlign:'center',color:'white',fontSize:'20px',display:'flex',justifyContent:'center',alignItems:'center'}}>@your site all right reseved</p>
         </div>
       </div>
     </>
