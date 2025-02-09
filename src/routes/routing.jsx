@@ -9,12 +9,12 @@ import Services from '../pages/Services/index';
 import Contactus from '../pages/Contactus/index';
 import Notfound from '../pages/Notfound/index';
 import FAQs from '../components/FAQs';
-import Creativity from '../service-pages/creativity' 
-import Custom from '../service-pages/custom';
-import Mobile from '../service-pages/mobile';
-import Markiting from '../service-pages/markiting';
-import Software from '../service-pages/software';
-import Animation from '../service-pages/animation';
+import Creativity from '../service-pages/create-identity/index' 
+import Custom from '../service-pages/custom-logo/index';
+import Mobile from '../service-pages/mobile-apps/index';
+import Markiting from '../service-pages/digital-marketing/index';
+import Software from '../service-pages/software-development/index';
+import Animation from '../service-pages/vedio-animation/index';
 
 const Routing = () => {
     const location = useLocation();

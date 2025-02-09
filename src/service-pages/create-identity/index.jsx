@@ -1,10 +1,12 @@
 import React from 'react';
+import Offer from './offer';
 
 const Creativity = () => {
     return (
-        <div>
+        <>
             hello creative 
-        </div>
+            <Offer/>
+        </>
     );
 }
 
