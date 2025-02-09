@@ -2,51 +2,51 @@ import React from "react";
 import { Card, Row, Col, Typography } from "antd";
 import "antd/dist/reset.css";
 import "./styles.css";
-import coustomLogo from '../../assets/Images/coustom-logo.jpg';
-import brouchImg from '../../assets/Images/brouch.jpg';
-import stationaryDesign from '../../assets/Images/stationary-design.jpg';
-import PromotionalDesign from '../../assets/Images/promotional-design.png';
-import SocialMedia from '../../assets/Images/social-media.jpeg';
-import infoGraphics from '../../assets/Images/info-graphics.jpeg';
+import Repo_menegement from '../../assets/Images/reputation-management.jpeg';
+import PPC from '../../assets/Images/PPC.jpeg';
+import SEO from '../../assets/Images/SEO.jpeg';
+import Social from '../../assets/Images/Social.png';
+import App from '../../assets/Images/App-marketing.jpeg';
+import Email from '../../assets/Images/email-marketing.jpeg';
 
 const { Title, Paragraph } = Typography;
 
 const services = [
   {
-    title: "Custom Logos",
+    title: "Reputation Management",
     description:
       "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image: coustomLogo,
+    image: Repo_menegement,
   },
   {
-    title: "Appealing Brochures",
+    title: "Pay Per Click",
     description:
       "The main purpose of a brochure is to introduce the company to potential clients and inform them about products and services being offered.",
-    image: brouchImg,
+    image: PPC,
   },
   {
-    title: "Stationery Design",
+    title: "Search Engine Optimization",
     description:
       "What better way to flaunt your corporate logo than getting a set of stationery designed? It adds a personal touch and creates a sense of belonging.",
-    image: stationaryDesign,
+    image: SEO,
   },
   {
-    title: "Social Media Design",
+    title: "Social Media Marketing",
     description:
       "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image:SocialMedia,
+    image:Social,
   },
   {
-    title: "Infographics Design",
+    title: "App Marketing",
     description:
       "Infographics make it easier for consumers to understand the information and let them digest important information.",
-    image: infoGraphics,
+    image: App,
   },
   {
-    title: "Promotional Design",
+    title: "Email Marketing",
     description:
       "The main purpose of a brochure is to introduce the company to your potential clients and inform them about products and services.",
-    image:PromotionalDesign,
+    image:Email,
   },
 ];
 
@@ -58,7 +58,7 @@ const Offer = () => {
           What Do <span className="highlight">WE OFFER</span>
         </Title>
         <Paragraph className="subheading">
-          We offer satisfaction to its fullest. The work we do is the perfect example of how a digital agency should operate.
+        We offer satisfaction to its fullest. The work we do is the perfect example of how a digital agency should operate when at its fullest. Our every service given to our customer is revised and experimented with more than 100 times to make sure that they are satisfied.
         </Paragraph>
         <Row gutter={[16, 16]}>
           {services.map((service, index) => (
@@ -69,7 +69,7 @@ const Offer = () => {
                 className="custom-card"
               >
                 <Title level={4}>{service.title}</Title>
-                <Paragraph>{service.description}</Paragraph>
+                <Paragraph className='text'>{service.description}</Paragraph>
               </Card>
             </Col>
           ))}

@@ -69,7 +69,7 @@ const Offer = () => {
                 className="custom-card"
               >
                 <Title level={4}>{service.title}</Title>
-                <Paragraph>{service.description}</Paragraph>
+                <Paragraph className="text">{service.description}</Paragraph>
               </Card>
             </Col>
           ))}

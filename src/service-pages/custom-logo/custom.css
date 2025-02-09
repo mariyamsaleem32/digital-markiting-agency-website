@@ -139,7 +139,7 @@ body {
   }
   
   /* Hero Section Styles */
-.hero-container {
+.custom-hero-container {
     position: relative;
     height: 500px;
     background-image: url('../../assets//Images/custom-bg.jpeg');
@@ -153,8 +153,15 @@ body {
     text-align: center;
   }
   
-  .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+  .text{
+    font-size: 17px;
+    font-weight:bold;
+    color: rgb(51, 44, 44);
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+  .custom-hero-overlay {
+    background-color: rgba(247, 183, 227, 0.5);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;

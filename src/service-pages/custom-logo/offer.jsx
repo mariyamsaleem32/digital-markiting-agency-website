@@ -2,51 +2,51 @@ import React from "react";
 import { Card, Row, Col, Typography } from "antd";
 import "antd/dist/reset.css";
 import "./custom.css";
-import coustomLogo from '../../assets/Images/coustom-logo.jpg';
-import brouchImg from '../../assets/Images/brouch.jpg';
-import stationaryDesign from '../../assets/Images/stationary-design.jpg';
-import PromotionalDesign from '../../assets/Images/promotional-design.png';
-import SocialMedia from '../../assets/Images/social-media.jpeg';
-import infoGraphics from '../../assets/Images/info-graphics.jpeg';
+import E_commerce from '../../assets/Images/e-Commerce.jpeg';
+import singlePage from '../../assets/Images/single-page.jpeg';
+import CMSIMG from '../../assets/Images/CMS-website.jpg';
+import B2B from '../../assets/Images/B2B.jpeg';
+import Web from '../../assets/Images/web-dev.jpeg'
+import Custom from '../../assets/Images/custom-dev.jpeg'
 
 const { Title, Paragraph } = Typography;
 
 const services = [
   {
-    title: "Custom Logos",
+    title: "E-Commerce Website",
     description:
-      "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image: coustomLogo,
+      "With minimal investment and resources, you can establish a global brand presence that enhances your product and generates a substantial return on investment. visualimagery offers a comprehensive suite of features and benefits to online retailers and merchants, catering to diverse industries and driving growth across the board.",
+    image: E_commerce,
   },
   {
-    title: "Appealing Brochures",
+    title: "Single Page Applications",
     description:
-      "The main purpose of a brochure is to introduce the company to potential clients and inform them about products and services being offered.",
-    image: brouchImg,
+      "With minimal investment and resources, you can cultivate a global brand identity that elevates your product and delivers a robust return on investment. visualimagery provides a wide array of features and advantages to online retailers and merchants, offering solutions that are beneficial across various industries.",
+    image: singlePage,
   },
   {
-    title: "Stationery Design",
+    title: "CMS Website",
     description:
-      "What better way to flaunt your corporate logo than getting a set of stationery designed? It adds a personal touch and creates a sense of belonging.",
-    image: stationaryDesign,
+      "Our Content Management System empowers users to effortlessly control and manage their website's content, regardless of their technical expertise. visualimagery enhances this experience, enabling anyone to operate a site with minimal guidance.",
+    image: CMSIMG,
   },
   {
-    title: "Social Media Design",
+    title: "B2B & B2C Portals",
     description:
-      "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image:SocialMedia,
+      "We develop business portals that empower you to expand your market reach and attract a broader client base. Additionally, we ensure seamless connections with clients across various regions of the globe. At visualimagery, we craft tailored strategies that address every aspect of your business needs, ensuring your success on a global scale.",
+    image:B2B,
   },
   {
-    title: "Infographics Design",
+    title: "Web Development",
     description:
-      "Infographics make it easier for consumers to understand the information and let them digest important information.",
-    image: infoGraphics,
+      "The initial impression is often the most lasting, which is why we meticulously craft websites that captivate visitors from their first interaction, ensuring continuous engagement. Our design and development process is strategically tailored to help you effectively reach and engage your target audience, unlocking the full potential of your online presence.",
+    image: Web,
   },
   {
-    title: "Promotional Design",
+    title: "Custom Development",
     description:
-      "The main purpose of a brochure is to introduce the company to your potential clients and inform them about products and services.",
-    image:PromotionalDesign,
+      "We provide bespoke website development services tailored to reflect your business's unique identity. This approach enables us to craft a solution that is perfectly aligned with your business needs, rather than forcing your project into a one-size-fits-all solution.",
+    image:Custom,
   },
 ];
 
@@ -58,7 +58,7 @@ const Offer = () => {
           What Do <span className="highlight">WE OFFER</span>
         </Title>
         <Paragraph className="subheading">
-          We offer satisfaction to its fullest. The work we do is the perfect example of how a digital agency should operate.
+        We deliver unparalleled satisfaction. Our work exemplifies the optimal functioning of a digital agency at its peak potential. Each service we provide is meticulously refined and tested over 100 times to ensure it exceeds our customers' expectations.
         </Paragraph>
         <Row gutter={[16, 16]}>
           {services.map((service, index) => (
@@ -69,7 +69,7 @@ const Offer = () => {
                 className="custom-card"
               >
                 <Title level={4}>{service.title}</Title>
-                <Paragraph>{service.description}</Paragraph>
+                <Paragraph className="text" >{service.description}</Paragraph>
               </Card>
             </Col>
           ))}

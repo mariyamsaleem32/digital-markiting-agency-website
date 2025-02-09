@@ -138,11 +138,18 @@ body {
     margin-top: 1rem;
   }
   
+  .text{
+  font-size: 17px;
+  font-weight:bold;
+  color: rgb(51, 44, 44);
+  font-family: 'Times New Roman', Times, serif;
+  }
+  
   /* Hero Section Styles */
-.hero-container {
+.marketing-hero-container {
     position: relative;
     height: 500px;
-    background-image: url('../../assets//Images/hero-bg.jpg');
+    background-image: url('../../assets//Images/marketing-bg.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -153,7 +160,7 @@ body {
     text-align: center;
   }
   
-  .hero-overlay {
+  .marketing-hero-overlay {
     background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
     padding: 2rem;
     border-radius: 10px;

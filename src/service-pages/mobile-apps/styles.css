@@ -16,6 +16,13 @@ body {
     text-decoration: none;
     color: inherit;
   }
+
+  .text{
+    font-size: 17px;
+    font-weight:bold;
+    color: rgb(51, 44, 44);
+    font-family: 'Times New Roman', Times, serif;
+    }
   
   /* Hero Section */
   .hero-heading {

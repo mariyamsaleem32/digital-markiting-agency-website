@@ -1,6 +1,6 @@
 import React from 'react';
-import HeroSection from './heroSection';
-import SubHero from './sub-hero'
+import HeroSection from './hero';
+import SubHero from './subhero'
 import Offer from './offer';
 import ChooseUs from './chose';
 import "./custom.css";
