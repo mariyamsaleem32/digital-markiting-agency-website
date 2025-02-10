@@ -2,51 +2,51 @@ import React from "react";
 import { Card, Row, Col, Typography } from "antd";
 import "antd/dist/reset.css";
 import "./styles.css";
-import coustomLogo from '../../assets/Images/coustom-logo.jpg';
-import brouchImg from '../../assets/Images/brouch.jpg';
-import stationaryDesign from '../../assets/Images/stationary-design.jpg';
-import PromotionalDesign from '../../assets/Images/promotional-design.png';
-import SocialMedia from '../../assets/Images/social-media.jpeg';
-import infoGraphics from '../../assets/Images/info-graphics.jpeg';
+import character from '../../assets/Images/charecter.jpeg';
+import twoD from '../../assets/Images/2d.jpeg';
+import threeD from '../../assets/Images/3d.jpeg';
+import motion from '../../assets/Images/motion.jpeg';
+import explain from '../../assets/Images/explain.jpeg';
+import whiteboard from '../../assets/Images/whiteboard.jpeg';
 
 const { Title, Paragraph } = Typography;
 
 const services = [
   {
-    title: "Custom Logos",
+    title: "Character Animation",
     description:
-      "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image: coustomLogo,
+      "We utilize various characters' 3D and 2D features to explain your message in a video. Our team utilizes the idea of a real interface and puts in more impressive feels.",
+    image: character,
   },
   {
-    title: "Appealing Brochures",
+    title: "2D Animation",
     description:
-      "The main purpose of a brochure is to introduce the company to potential clients and inform them about products and services being offered.",
-    image: brouchImg,
+      "Our specialists craft the best 2D animatronics videos by utilizing the best objects and other fundamentals. These objects are skillfully animated to explain your message in a very illustrative manner.",
+    image: twoD,
   },
   {
-    title: "Stationery Design",
+    title: "3D Animation",
     description:
-      "What better way to flaunt your corporate logo than getting a set of stationery designed? It adds a personal touch and creates a sense of belonging.",
-    image: stationaryDesign,
+      "Our Firm not only understands the requirement of designs but probe into clients’ mind & their hearts, know their dreams, expectations and put their years of expertise to visualize. Through 3D Walkthrough Animation as if the Client having tour into the real world of his dream Home.",
+    image: threeD,
   },
   {
-    title: "Social Media Design",
+    title: "Motion Graphics",
     description:
-      "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image:SocialMedia,
+      'We produce inspiring, inventive 2D and 3D infographic videos focused on your business goals treating every job with the same high level of care and attention whatever the budget.',
+    image:motion,
   },
   {
-    title: "Infographics Design",
+    title: "Explainer Vedios",
     description:
-      "Infographics make it easier for consumers to understand the information and let them digest important information.",
-    image: infoGraphics,
+      "We integrate live video footage with different elements that are tracked to the video. Our team brings the idea of real interaction and a more immersive feel for your video.",
+    image: explain,
   },
   {
-    title: "Promotional Design",
+    title: "Whiteboard Animation",
     description:
-      "The main purpose of a brochure is to introduce the company to your potential clients and inform them about products and services.",
-    image:PromotionalDesign,
+      "We use different concepts and ideas to explain what you desire with our whiteboard animations. Our team brings the idea of real interaction and a more immersive feel for your video",
+    image:whiteboard,
   },
 ];
 
@@ -58,7 +58,7 @@ const Offer = () => {
           What Do <span className="highlight">WE OFFER</span>
         </Title>
         <Paragraph className="subheading">
-          We offer satisfaction to its fullest. The work we do is the perfect example of how a digital agency should operate.
+        We offer satisfaction to its fullest. The work we do is the perfect example of how a digital agency should operate when at its fullest. Our every service given to our customer is revised and experimented with more than 100 times to make sure that they are satisfied.
         </Paragraph>
         <Row gutter={[16, 16]}>
           {services.map((service, index) => (

@@ -19,8 +19,7 @@ export default function Team() {
                   <h6>OUR TEAM</h6>
                   <h4>We Help to Acheive Your Business Goal</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                  At visualimagery, our team is the heart of everything we do. We are a diverse group of digital marketing experts, creative thinkers, and problem solvers, all united by a passion for helping businesses grow. From strategists and designers to content creators and data analysts, each team member brings their unique skills and insights to the table, ensuring that your brand gets the attention it deserves. Together, we work collaboratively to deliver innovative solutions and outstanding results for every client we serve.
                   </p>
                   <button className="btn learn-more-btn">View All</button>
                 </div>

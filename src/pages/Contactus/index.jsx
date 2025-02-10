@@ -73,7 +73,7 @@ const Contactus = () => {
                 <AiOutlineComment />
               </div>
               <h3>Contact</h3>
-              <p>Your number <br /> Next number</p>
+              <p>03207707187<br /> +923132403968</p>
             </div>
           </div>
 
@@ -91,7 +91,7 @@ const Contactus = () => {
         <div className="contact-header">
           <h6>GET IN TOUCH</h6>
           <h4>Ready to Get Started?</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+          <p>Our renowned corporation is defined by our people. Our sales executive are highly experienced to cater all the needs and want of our customers. We are always available for our customers and never fail to identify what they desire.</p>
         </div>
 
         <div className="row mt-2 pt-2">

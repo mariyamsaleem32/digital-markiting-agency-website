@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Row, Col, Typography } from "antd";
 import "antd/dist/reset.css";
 import "./styles.css";
-import Automation from '../../assets/Images/automationjpeg';
+import Automation from '../../assets/Images/automation.jpeg';
 import enterprise from '../../assets/Images/portal.jpeg';
 import ERP from '../../assets/Images/erp.jpeg';
 import ESolutions from '../../assets/Images/e-com.png';

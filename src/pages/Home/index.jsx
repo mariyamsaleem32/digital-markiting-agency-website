@@ -133,21 +133,19 @@ function Home() {
                   <h6>TESTIMONIALS</h6>
                   <h4>What Our Clients Are Saying?</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                    eu, pretium quis, sem. Nulla consequat massa quis enim.
-                    Donec pede justo, fringilla vel, aliquet nec, vulputate
-                    eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                    venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                    pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-                    semper nisi. Aenean vulputate eleifend tellus. Aenean leo
-                    ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                    Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
-                    tellus. Phasellus viverra nulla ut metus varius laoreet.
-                    Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-                    augue.
+                  Our clients consistently praise us for delivering outstanding digital marketing solutions. Here’s a glimpse of their feedback:
+
+"The team transformed our online presence and boosted our growth with innovative strategies and exceptional quality of work."
+
+"We’re thrilled with the responsive design and market-savvy approach. Their work is top-notch and results-driven."
+
+"A game-changer for our business. Their tailored strategies have delivered remarkable ROI and surpassed our expectations."
+
+"From SEO to social media campaigns, their expertise is unmatched. We trust them to consistently deliver quality results."
+
+At visualimaginary, we’re dedicated to providing high-quality, results-oriented solutions that help our clients succeed.
+
+
                   </p>
                 </div>
               </div>

@@ -8,7 +8,7 @@ export const HomePageText ={
     serviceshome_subheader: 'Our SERVICES',
     serviceshome_header: 'Let’s Check Our Services',
     serviceshome_subheader1: 'Explore our diverse range of services designed to elevate your brand, enhance your digital presence, and help you succeed in a competitive marketplace.',
-  
+
     services_box_title1: 'Creative Identity',
     services_box_des1: 'We help you create a unique and memorable identity for your brand. Our creative solutions focus on making your business stand out through design and visuals.',
   

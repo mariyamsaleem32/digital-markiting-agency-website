@@ -146,10 +146,10 @@ body {
   }
   
   /* Hero Section Styles */
-.hero-container {
+.vedio-hero-container {
     position: relative;
     height: 500px;
-    background-image: url('../../assets//Images/hero-bg.jpg');
+    background-image: url('../../assets//Images/animation-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
