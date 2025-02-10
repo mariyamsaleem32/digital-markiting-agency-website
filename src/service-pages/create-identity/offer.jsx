@@ -64,7 +64,7 @@ const Offer = () => {
           {services.map((service, index) => (
             <Col xs={24} sm={12} md={12} lg={8} key={index}>
               <Card
-                hoverable
+                hoverable 
                 cover={<img alt={service.title} src={service.image} className="card-image" />}
                 className="custom-card"
               >

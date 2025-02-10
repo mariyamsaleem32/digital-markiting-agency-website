@@ -2,51 +2,51 @@ import React from "react";
 import { Card, Row, Col, Typography } from "antd";
 import "antd/dist/reset.css";
 import "./styles.css";
-import coustomLogo from '../../assets/Images/coustom-logo.jpg';
-import brouchImg from '../../assets/Images/brouch.jpg';
-import stationaryDesign from '../../assets/Images/stationary-design.jpg';
-import PromotionalDesign from '../../assets/Images/promotional-design.png';
-import SocialMedia from '../../assets/Images/social-media.jpeg';
-import infoGraphics from '../../assets/Images/info-graphics.jpeg';
+import androidApps from '../../assets/Images/android-apps.jpeg';
+import iosApps from '../../assets/Images/ios-apps.jpeg';
+import mobileGames from '../../assets/Images/mobile-games.jpeg';
+import crossPlateform from '../../assets/Images/cross-plateform.jpeg';
+import realityApps from '../../assets/Images/reality-apps.jpeg';
+import IOT from '../../assets/Images/IOT-dev.jpeg';
 
 const { Title, Paragraph } = Typography;
 
 const services = [
   {
-    title: "Custom Logos",
+    title: "Android Apps",
     description:
-      "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image: coustomLogo,
+      "Developing state-of-the-art Android Applications for startups, enterprises, and individuals. visualimagery is well-known for its android based apps around the globe. Our Android Applications have always been on top to deliver what the audience desir",
+    image: androidApps,
   },
   {
-    title: "Appealing Brochures",
+    title: "ios Apps",
     description:
-      "The main purpose of a brochure is to introduce the company to potential clients and inform them about products and services being offered.",
-    image: brouchImg,
+      "Providing clients with high-value iOS apps, delivering elite users' experience is what we promise. Our iPhone and iPad apps are hallmarks of quality that are used by all iOS users around the world. We make sure to deliver the best user experience to your audience",
+    image: iosApps,
   },
   {
-    title: "Stationery Design",
+    title: "Cross Plateform",
     description:
-      "What better way to flaunt your corporate logo than getting a set of stationery designed? It adds a personal touch and creates a sense of belonging.",
-    image: stationaryDesign,
+      "Our cross-platform application provides enhanced users' experience. We design and build smooth apps that run flawlessly on multiple platforms, ensuring a pitch-perfect experience. The functionality and features of our hybrid applications deliver a native-like user experience.",
+    image: crossPlateform,
   },
   {
-    title: "Social Media Design",
+    title: "Augmented Reality",
     description:
-      "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image:SocialMedia,
+      "It is a big game-changer in today's world. We create these apps to help you lay pieces of the real world in the virtual world. We hire top-of-the-line AR app developers to make sure that our clients receive something unique and exciting.",
+    image:realityApps,
   },
   {
-    title: "Infographics Design",
+    title: "Mobile Games",
     description:
-      "Infographics make it easier for consumers to understand the information and let them digest important information.",
-    image: infoGraphics,
+      "Mobile Gaming has evolved a lot in the past few years and visualimagery has helped its clients to keep up with the evolving gaming technology. Either it’s Android, iOS, Windows, or cross-platform games, our team of expert developers knows how to make the best use of technology.",
+    image: mobileGames,
   },
   {
-    title: "Promotional Design",
+    title: "IOT Development",
     description:
-      "The main purpose of a brochure is to introduce the company to your potential clients and inform them about products and services.",
-    image:PromotionalDesign,
+      "IoT connects objects with the internet to make data access easier. We ensure that our IoT apps improve the market value of your business. We aim to move the world and our IoT services will make sure that our customers are always updated.",
+    image:IOT,
   },
 ];
 
@@ -58,7 +58,7 @@ const Offer = () => {
           What Do <span className="highlight">WE OFFER</span>
         </Title>
         <Paragraph className="subheading">
-          We offer satisfaction to its fullest. The work we do is the perfect example of how a digital agency should operate.
+        We offer satisfaction at its fullest. The work we do is the perfect example of how a digital agency should operate when at its fullest. Our every service given to our customer is revised and experimented for more than a 100 time to make sure that they are satisfied
         </Paragraph>
         <Row gutter={[16, 16]}>
           {services.map((service, index) => (

@@ -2,51 +2,51 @@ import React from "react";
 import { Card, Row, Col, Typography } from "antd";
 import "antd/dist/reset.css";
 import "./styles.css";
-import coustomLogo from '../../assets/Images/coustom-logo.jpg';
-import brouchImg from '../../assets/Images/brouch.jpg';
-import stationaryDesign from '../../assets/Images/stationary-design.jpg';
-import PromotionalDesign from '../../assets/Images/promotional-design.png';
-import SocialMedia from '../../assets/Images/social-media.jpeg';
-import infoGraphics from '../../assets/Images/info-graphics.jpeg';
+import Automation from '../../assets/Images/automationjpeg';
+import enterprise from '../../assets/Images/portal.jpeg';
+import ERP from '../../assets/Images/erp.jpeg';
+import ESolutions from '../../assets/Images/e-com.png';
+import CRM from '../../assets/Images/crm.png';
+import Custom from '../../assets/Images/custom.jpeg';
 
 const { Title, Paragraph } = Typography;
 
 const services = [
   {
-    title: "Custom Logos",
+    title: "Business Automation System",
     description:
-      "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image: coustomLogo,
+      "We are the source of generating the most iconic and unique ideas to make sure that creativity and innovation never fade away from the industry. Our work is based on the imagination and decision-making of industry specialists.",
+    image: Automation,
   },
   {
-    title: "Appealing Brochures",
+    title: "Enterprise Portals",
     description:
-      "The main purpose of a brochure is to introduce the company to potential clients and inform them about products and services being offered.",
-    image: brouchImg,
+      "We develop unique and superior quality enterprise portals to improve the quality of communication within the organizations of any company. Our enterprise portals allow organizations to integrate information, employees, and all major process across the organizational boundaries.",
+    image: enterprise,
   },
   {
-    title: "Stationery Design",
+    title: "ERP Solutions",
     description:
-      "What better way to flaunt your corporate logo than getting a set of stationery designed? It adds a personal touch and creates a sense of belonging.",
-    image: stationaryDesign,
+      "Enterprise resource planning simplifies your business processes. Our ERP management information system integrates areas such as planning, purchasing, inventory, sales, marketing, finance, and human resources. From implementation to consulting and support we offer all the services related to ERP systems.",
+    image: ERP,
   },
   {
-    title: "Social Media Design",
+    title: "E-Commerce Solutions",
     description:
-      "A logo is a company's trademark that defines and distinguishes a business from another. It conveys the basic idea about your service or product to your audience.",
-    image:SocialMedia,
+      "E-commerce is the best and easiest way of business expansion. Whether you’re a business to business or business to consumer we offer full-fledged e-commerce solutions. Our customized advice and consultation help you in getting maximum results from internet business.",
+    image:ESolutions,
   },
   {
-    title: "Infographics Design",
+    title: "CRM Solutions",
     description:
-      "Infographics make it easier for consumers to understand the information and let them digest important information.",
-    image: infoGraphics,
+      "With CRM systems you can identify, understand, and assist your clients. Our CRM system enables you to effectively complete the following business processes: collecting and maintaining customer data, customer interaction, access business information, automate sales. Our system focuses on consistent interaction with current and potential customers.",
+    image: CRM,
   },
   {
-    title: "Promotional Design",
+    title: "Custom Development",
     description:
-      "The main purpose of a brochure is to introduce the company to your potential clients and inform them about products and services.",
-    image:PromotionalDesign,
+      "We offer a full range of custom software development services for a wide variety of verticals and business domains. No matter if you’re an enterprise or a start-up, we provide software development solutions on all scales. We understand your industry and company processes before starting any development work.",
+    image:Custom,
   },
 ];
 
@@ -58,7 +58,7 @@ const Offer = () => {
           What Do <span className="highlight">WE OFFER</span>
         </Title>
         <Paragraph className="subheading">
-          We offer satisfaction to its fullest. The work we do is the perfect example of how a digital agency should operate.
+        We offer satisfaction at its fullest. The work we do is the perfect example of how a digital agency should operate when at its fullest. Our every service given to our customer is revised and experimented for more than a 100 time to make sure that they are satisfied.
         </Paragraph>
         <Row gutter={[16, 16]}>
           {services.map((service, index) => (

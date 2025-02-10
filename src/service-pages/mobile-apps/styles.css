@@ -146,10 +146,10 @@ body {
   }
   
   /* Hero Section Styles */
-.hero-container {
+.mobile-hero-container {
     position: relative;
     height: 500px;
-    background-image: url('../../assets//Images/hero-bg.jpg');
+    background-image: url('../../assets//Images/mobile-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
