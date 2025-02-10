@@ -168,7 +168,7 @@ const Contactus = () => {
                   </div>
                   <div className="col-lg-12 col-sm-12">
                     <br />
-                    <button type="submit" className="btn readmore">
+                    <button type="submit" className="btn-submit">
                       Send Message
                     </button>
                   </div>

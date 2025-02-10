@@ -28,7 +28,7 @@ const Footer = () => {
               <Link id='link' className="text-light hover:text-white mb-2 block" to="/faqs">Terms &amp; Condition</Link>
             </div>
             
-            <div>
+            <div className='service'>
   <h4 className="text-white mb-4">Our Services</h4>
   <p><Link to={'/creative-identity'} className="text-white mb-1 no-underline">Creative Identity</Link></p>
   <p><Link to={'/custom-website'} className="text-white mb-1 no-underline">Custom Website</Link></p>
@@ -39,9 +39,10 @@ const Footer = () => {
 </div>
 
 
-            <div>
-             <AppQR/>
-            </div>
+<div className="qr-section">
+  <AppQR />
+</div>
+
           </div>
         </div>
       </div>

@@ -1,22 +1,26 @@
 import React from "react";
 import "./style.css";
 import { slideshowText } from "./data";
-import home_img_right from "../../assets/Images/Home-page-right.jpg";
+import home_img_right from "../../assets/Images/home-bg.png";
 import { Link } from "react-router";
 
-function Slideshow({ subheadering1, heading, subheading }) {
+function Slideshow() {
   return (
     <>
     <section className="home">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-6 col-12">
-            <div className="slideshow-text">
-              <h6 className="head-text">{slideshowText.subheadering1}</h6>
+            <div className="slideshow-text" >
+              <h6 className="head-text" style={{marginTop:'0px',marginBottom:'10px'}}>{slideshowText.subheadering1}</h6>
               <h3>{slideshowText.heading}</h3>
               <p>{slideshowText.subheading}</p>
-              <button className="btn about-btn mt-5 mb-5">
+              <button id="about" className="btn about-btn mr-2 mt-2 mb-5">
                 <Link className="btn-link" to={'/aboutus'} style={{color:'black', textDecoration:'none'}}>About Us
+                </Link>
+                </button>
+                <button id="contact" className="btn about-btn mt-2 ml-2 mb-5" style={{marginLeft:'6px'}}>
+                <Link className="btn-link" to={'/contactus'} style={{color:'black', textDecoration:'none'}}>Contact Us
                 </Link>
                 </button>
             </div>

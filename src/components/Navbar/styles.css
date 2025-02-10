@@ -12,13 +12,14 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Your navbar and other styles follow */
-.navbar {
-  background-color: #2d3748; /* Dark background */
+nav {
+  background-color: rgb(50, 45, 53);
+  position: sticky;
+  top: 0; 
+  z-index: 1000; 
   transition: all 0.3s ease-in-out;
 }
 
-/* The rest of your styles... */
 
 
 .navbar .nav-link {
@@ -97,3 +98,4 @@ body {
     font-size: 1.25rem;
   }
 }
+

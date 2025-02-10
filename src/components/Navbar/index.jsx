@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-gray-800">
+      <nav>
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             {/* Mobile menu button */}
@@ -25,8 +25,6 @@ const Navbar = () => {
                 aria-expanded={isMobileMenuOpen ? "true" : "false"}
                 onClick={toggleMobileMenu}
               >
-                <span className="sr-only">Open main menu</span>
-                {/* Hamburger icon when the menu is closed */}
                 {!isMobileMenuOpen ? (
                   <svg
                     className="block size-6"

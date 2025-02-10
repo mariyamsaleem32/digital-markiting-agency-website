@@ -2,8 +2,9 @@ import React from 'react';
 import { ServicesText } from "./data";
 import { FaPalette, FaLaptopCode, FaBullhorn, FaMobileAlt, FaCogs, FaVideo } from 'react-icons/fa';
 import { Link } from 'react-router';
+import './styles.css'
 
-function Services() {
+const Services = () =>{
   return (
     <div>
       <div className="serviceshome">

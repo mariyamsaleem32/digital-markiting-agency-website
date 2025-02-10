@@ -1,0 +1,165 @@
+/* General Styles */
+.serviceshome {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .page-title-area h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .servicesheader {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .servicesheader h6 {
+    font-size: 20px;
+    color: #777;
+  }
+  
+  .servicesheader h4 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+  }
+  
+  .servicesheader p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Service Box Styles */
+  .services-box-home {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .services-box-home:hover {
+    transform: translateY(-10px);
+  }
+  
+  .services-box-home h4 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .services-box-home p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .learn-more-btn {
+    background-color: #8a8f96;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+
+  
+  /* Icon Styles */
+  .icon1, .icon2, .icon3 {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Grid Layout */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-lg-4, .col-md-4, .col-6 {
+    flex: 1 0 31%; /* Default 3 items per row */
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 992px) {
+    .col-lg-4 {
+      flex: 1 0 48%; /* 2 items per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 1 0 100%; /* 1 item per row on small screens */
+      margin-bottom: 20px; /* Reduced bottom margin for smaller screens */
+    }
+  
+    /* Make icons slightly smaller on smaller screens */
+    .icon1, .icon2, .icon3 {
+      font-size: 35px; /* Slightly smaller for better fit */
+    }
+  
+    .servicesheader h4 {
+      font-size: 28px; /* Slightly smaller header font on mobile */
+    }
+  
+    .servicesheader p {
+      font-size: 15px; /* Slightly smaller text for readability on mobile */
+    }
+  
+    .learn-more-btn {
+      padding: 8px 16px; /* Smaller button on mobile */
+      font-size: 14px; /* Adjust button text size */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Ensure text alignment is good on very small screens */
+    .servicesheader h6 {
+      font-size: 18px;
+    }
+  
+    .servicesheader h4 {
+      font-size: 24px; /* Even smaller font size */
+    }
+  
+    .servicesheader p {
+      font-size: 12px; /* Smaller text */
+    }
+  
+    /* Further reduce font sizes for smaller screens */
+    .services-box-home h4 {
+      font-size: 16px; /* Adjust heading size */
+    }
+  
+    .services-box-home p {
+      font-size: 14px; /* Adjust paragraph text */
+    }
+  
+    .icon1, .icon2, .icon3 {
+      font-size: 30px; /* Smaller icons on very small screens */
+    }
+  
+    .learn-more-btn {
+      padding: 8px 14px; /* Adjust button size */
+      font-size: 12px; /* Reduce button text size for better fit */
+    }
+  }
+  

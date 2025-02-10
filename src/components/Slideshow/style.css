@@ -32,7 +32,7 @@
   
   .home .slideshow-text .about-btn {
     background-color: #fe4c1c;
-    border-radius: 20px;
+    border-radius: 38px;
     padding: 12px 24px;
     font-size: 18px;
     font-weight: 500;
@@ -133,7 +133,7 @@
     }
   
     .home .home_img_right {
-      display: none; /* Hide the image on smaller screens */
+      display: none; 
     }
   }
   
