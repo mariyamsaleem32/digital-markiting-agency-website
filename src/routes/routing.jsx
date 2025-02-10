@@ -24,7 +24,7 @@ const Routing = () => {
         <div className="App">
             {!isNotFound && <Navbar />} {/* Render Navbar only if not on the NotFound page */}
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route index element={<Home />} />
                 <Route path="/aboutus" element={<Aboutus />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/team" element={<Team />} />
