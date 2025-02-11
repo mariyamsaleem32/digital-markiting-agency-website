@@ -1,6 +1,9 @@
-import './styles.css';
-import { Link } from 'react-router'
-import { useState } from 'react'; 
+import React, { useState } from 'react';
+import { Link } from 'react-router';
+import { Layout, Menu, Drawer } from 'antd';
+import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
+
+const { Header } = Layout;
 
 const Navbar = () => {
   // State for toggling the mobile menu visibility
@@ -12,142 +15,74 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <nav>
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div className="relative flex h-16 items-center justify-between">
-            {/* Mobile menu button */}
-            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <button
-                type="button"
-                className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
-                aria-controls="mobile-menu"
-                aria-expanded={isMobileMenuOpen ? "true" : "false"}
-                onClick={toggleMobileMenu}
-              >
-                {!isMobileMenuOpen ? (
-                  <svg
-                    className="block size-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
-                  </svg>
-                ) : (
-                  // Close icon when the menu is open
-                  <svg
-                    className="block size-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6 18 18 6M6 6l12 12"
-                    />
-                  </svg>
-                )}
-              </button>
-            </div>
-
-            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="hidden sm:ml-6 sm:block">
-                <div className="flex space-x-4">
-                  <Link style={{color:'white',textDecoration:'none'}}
-                    to="/"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700
-                     hover:text-white focus:bg-blue-800"
-                    aria-current="page"
-                  >
-                   Home
-                  </Link>
-                  <Link style={{color:'white',textDecoration:'none'}}
-                    to="/aboutus"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-blue-800"
-                  >
-                   About
-                  </Link>
-                  <Link
-                    to="/services"
-                    style={{color:'white',textDecoration:'none'}}
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-blue-800"
-                  >
-                    Services
-                  </Link>
-                  <Link
-                    to="/team"
-                    style={{color:'white',textDecoration:'none'}}
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-blue-800"
-                  >
-                    Team 
-                  </Link>
-                  <Link
-                    to="/contactus"
-                    style={{color:'white',textDecoration:'none'}}
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-blue-800"
-                  >
-                    Contact 
-                  </Link>
-                </div>
-              </div>
-            </div>
+    <Layout>
+      <Header style={{ background: '#333' }}>
+        <div className="logo" />
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          {/* Mobile menu button */}
+          <div className="mobile-menu">
+            <button
+              onClick={toggleMobileMenu}
+              style={{ background: 'transparent', border: 'none', color: '#fff' }}
+            >
+              {isMobileMenuOpen ? (
+                <CloseOutlined style={{ fontSize: 24, color: 'white' }} />
+              ) : (
+                <MenuOutlined style={{ fontSize: 24, color: 'white' }} />
+              )}
+            </button>
           </div>
+
+          {/* Desktop menu */}
+          <Menu theme="dark" mode="horizontal" style={{ flexGrow: 1, justifyContent: 'center' }}>
+            <Menu.Item key="1">
+              <Link to="/" style={{ color: 'white' }}>Home</Link>
+            </Menu.Item>
+            <Menu.Item key="2">
+              <Link to="/aboutus" style={{ color: 'white' }}>About</Link>
+            </Menu.Item>
+            <Menu.Item key="3">
+              <Link to="/services" style={{ color: 'white' }}>Services</Link>
+            </Menu.Item>
+            <Menu.Item key="4">
+              <Link to="/team" style={{ color: 'white' }}>Team</Link>
+            </Menu.Item>
+            <Menu.Item key="5">
+              <Link to="/contactus" style={{ color: 'white' }}>Contact</Link>
+            </Menu.Item>
+          </Menu>
         </div>
+      </Header>
 
-        {/* Mobile menu, show/hide based on mobile menu state */}
-        {isMobileMenuOpen && (
-          <div className="sm:hidden" id="mobile-menu">
-            <div className="space-y-1 px-2 pt-2 pb-3">
-              <Link
-                to="/"
-                style={{color:'white',textDecoration:'none'}}
-                 className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-blue-500"
-              >
-                Home
-              </Link>
-              <Link
-                to="/aboutus"
-                style={{color:'white',textDecoration:'none'}}
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-blue-500"
-              >
-                About
-              </Link>
-              <Link
-                to="/services"
-                style={{color:'white',textDecoration:'none'}}
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-blue-500"
-              >
-                Services
-              </Link>
-              <Link
-                to="/team"
-                style={{color:'white',textDecoration:'none'}}
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-blue-500 "
-              >
-                Team
-              </Link>
-              <Link
-                to="/contactus"
-                style={{color:'white',textDecoration:'none'}}
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white focus:bg-blue-500"
-              >
-                Contact
-              </Link>
-            </div>
-          </div>
-        )}
-      </nav>
-    </>
+      {/* Mobile menu (Drawer) */}
+      <Drawer
+        title="Menu"
+        placement="right"
+        closable={false}
+        onClose={toggleMobileMenu}
+        visible={isMobileMenuOpen}
+        width={250}
+        style={{ backgroundColor: '#333' }}
+      >
+        <Menu mode="vertical" theme="dark">
+          <Menu.Item key="1">
+            <Link to="/" style={{ color: 'white' }}>Home</Link>
+          </Menu.Item>
+          <Menu.Item key="2">
+            <Link to="/aboutus" style={{ color: 'white' }}>About</Link>
+          </Menu.Item>
+          <Menu.Item key="3">
+            <Link to="/services" style={{ color: 'white' }}>Services</Link>
+          </Menu.Item>
+          <Menu.Item key="4">
+            <Link to="/team" style={{ color: 'white' }}>Team</Link>
+          </Menu.Item>
+          <Menu.Item key="5">
+            <Link to="/contactus" style={{ color: 'white' }}>Contact</Link>
+          </Menu.Item>
+        </Menu>
+      </Drawer>
+    </Layout>
   );
 };
 
