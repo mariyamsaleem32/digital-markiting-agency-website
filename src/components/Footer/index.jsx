@@ -1,59 +1,78 @@
+import React from 'react';
 import { Link } from 'react-router';
-import { FaWhatsapp, FaFacebookF, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram } from 'react-icons/fa';
+import { Row, Col, Space, Typography, Button } from 'antd';
+import { FaWhatsapp, FaFacebookF, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import AppQR from '../QRcode';
-import './styles.css'
+import './styles.css';
+
+const { Title, Text } = Typography;
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-dark mt-1 py-5">
-        <div className="container py-5">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div>
-              <h4 className="text-white mb-4">Our Office</h4>
-              <p className="mb-2 text-white"><i className="mr-"><FaMapMarkerAlt /></i>karachi pakistan</p>
-              <p className="mb-2 text-white"><i className="mr-3"><FaPhoneAlt /></i>0320 7707187</p>
-              <p className="mb-2 text-white"><i className="mr-3"><FaEnvelope /></i>info.visualimagery@gmail.com</p>
-              <div className="flex pt-3">
-                <Link id='margin' className="bg-light text-dark p-2 rounded-full mr-3" to="https://wa.me/92 313 2403968" target="_blank"><FaWhatsapp /></Link>
-                <Link id='margin' className="bg-light text-dark p-2 rounded-full mr-2" to="https://www.facebook.com/profile.php?id=100090462638801" target="_blank" rel="noopener noreferrer"><FaFacebookF /></Link>
-                <Link id='margin' className="bg-light text-dark p-2 rounded-full mr-2" to="https://www.instagram.com/visualimagery11?fbclid=IwY2xjawITOe1leHRuA2FlbQIxMAABHSRpTx8xSx6Z4DOuNJgOtPq5IWhxmp1qvJCG7cPeGPTwc-bqT04SMtFDJg_aem_xCAlOlMNtOgcizCRlBhLeA" target="_blank"><FaInstagram/></Link>
-              </div>
-            </div>
-            <div>
-              <h4 className="text-white mb-4">Quick Links</h4>
-              <Link id='link' className="text-light hover:text-white mb-2 block" to="/aboutus">About Us</Link>
-              <Link id='link' className="text-light hover:text-white mb-2 block" to="/contactus">Contact Us</Link>
-              <Link id='link' className="text-light hover:text-white mb-2 block" to="/services">Our Services</Link>
-              <Link id='link' className="text-light hover:text-white mb-2 block" to="/faqs">Terms &amp; Condition</Link>
-            </div>
-            
-            <div className='service'>
-  <h4 className="text-white mb-4">Our Services</h4>
-  <p><Link to={'/creative-identity'} className="text-white mb-1 no-underline">Creative Identity</Link></p>
-  <p><Link to={'/custom-website'} className="text-white mb-1 no-underline">Custom Website</Link></p>
-  <p><Link to={'/digital-marketing'} className="text-white mb-1 no-underline">Digital Marketing</Link></p>
-  <p><Link to={'/mobile-apps'} className="text-white mb-1 no-underline">Mobile Apps</Link></p>
-  <p><Link to={'/software-development'} className="text-white mb-1 no-underline">Software Development</Link></p>
-  <p><Link to={'/vedio-animation'} className="text-white mb-1 no-underline">Video Animation</Link></p>
-</div>
-
-
-<div className="qr-section">
-  <AppQR />
-</div>
-
-          </div>
+      <div className="footer-container" style={{ backgroundColor: '#333', color: '#fff' }}>
+        <div className="container">
+          <Row gutter={[16, 16]} justify="space-between">
+            <Col xs={24} sm={12} md={6}>
+              <Title level={4} style={{ color: 'white' }}>Our Office</Title>
+              <Text className="footer-text"><FaMapMarkerAlt /> Karachi, Pakistan</Text><br />
+              <Text className="footer-text"><FaPhoneAlt /> 0320 7707187</Text><br />
+              <Text className="footer-text"><FaEnvelope /> info.visualimagery@gmail.com</Text><br />
+              <Space>
+                <Button 
+                  icon={<FaWhatsapp />} 
+                  href="https://wa.me/923132403968" 
+                  target="_blank" 
+                  style={{ backgroundColor: '#25D366', color: 'white', borderRadius: '50%' }}
+                />
+                <Button 
+                  icon={<FaFacebookF />} 
+                  href="https://www.facebook.com/profile.php?id=100090462638801" 
+                  target="_blank" 
+                  style={{ backgroundColor: '#3b5998', color: 'white', borderRadius: '50%' }}
+                />
+                <Button 
+                  icon={<FaInstagram />} 
+                  href="https://www.instagram.com/visualimagery11?fbclid=IwY2xjawITOe1leHRuA2FlbQIxMAABHSRpTx8xSx6Z4DOuNJgOtPq5IWhxmp1qvJCG7cPeGPTwc-bqT04SMtFDJg_aem_xCAlOlMNtOgcizCRlBhLeA" 
+                  target="_blank" 
+                  style={{ backgroundColor: '#E4405F', color: 'white', borderRadius: '50%' }}
+                />
+              </Space>
+            </Col>
+            <Col xs={24} sm={12} md={6}>
+              <Title level={4} style={{ color: 'white' }}>Quick Links</Title>
+              <Space direction="vertical">
+                <Link to="/aboutus" style={{ color: 'white' }}>About Us</Link>
+                <Link to="/contactus" style={{ color: 'white' }}>Contact Us</Link>
+                <Link to="/services" style={{ color: 'white' }}>Our Services</Link>
+                <Link to="/faqs" style={{ color: 'white' }}>Terms & Conditions</Link>
+              </Space>
+            </Col>
+            <Col xs={24} sm={12} md={6}>
+              <Title level={4} style={{ color: 'white' }}>Our Services</Title>
+              <Space direction="vertical">
+                <Link to="/creative-identity" style={{ color: 'white' }}>Creative Identity</Link>
+                <Link to="/custom-website" style={{ color: 'white' }}>Custom Website</Link>
+                <Link to="/digital-marketing" style={{ color: 'white' }}>Digital Marketing</Link>
+                <Link to="/mobile-apps" style={{ color: 'white' }}>Mobile Apps</Link>
+                <Link to="/software-development" style={{ color: 'white' }}>Software Development</Link>
+                <Link to="/video-animation" style={{ color: 'white' }}>Video Animation</Link>
+              </Space>
+            </Col>
+            <Col xs={24} sm={12} md={6}>
+              <AppQR />
+            </Col>
+          </Row>
         </div>
       </div>
-      <div className="bg-gray-800 py-2">
-        <div className="footer-container">
-        <p style={{textAlign:'center',color:'white',fontSize:'20px',display:'flex',justifyContent:'center',alignItems:'center'}}>@your site all right reseved</p>
-        </div>
+
+      <div className="footer-bottom" style={{ backgroundColor: '#2D3748', padding: '10px 0' }}>
+        <Typography.Text style={{ color: 'white', textAlign: 'center', display: 'block' }}>
+          @your site all rights reserved
+        </Typography.Text>
       </div>
     </>
   );
 }
 
 export default Footer;
-
