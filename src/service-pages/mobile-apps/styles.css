@@ -185,10 +185,14 @@ body {
   
   /* Highlighted Text */
   .highlight {
-    color: #3498db; /* Highlight color */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 30px;
+    color: #3498db;
+    font-size: 60px;
+  }
+
+  #mobile-style{
+    color: #0f767a;
+   font-weight: bold;
+    font-size: 60px;
   }
   
   /* Responsive Design */

@@ -7,15 +7,15 @@ body {
   color: #333;
 }
 
-#style{
+#custom-style{
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
   font-weight: bold;
-  color: rgb(103, 255, 15);
+  color: rgb(77, 161, 29);
 }
 
-#pera-style{
-  font-size: 15px;
+#custom-para-style{
+  font-size: 25px;
   font-weight: bold;
   color: rgb(238, 76, 76);
   font-family: monospace;
@@ -71,6 +71,8 @@ a {
 
 .highlight {
   color: #3498db;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .subheading {
@@ -297,4 +299,22 @@ a {
       font-size: 1.8rem;
   }
   
+  #custom-style{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(63, 134, 21);
+  }
+
+  .highlight{
+font-size: 40px;
+font-weight: bold;
+  }
+  
+  #custom-para-style{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(238, 76, 76);
+    font-family: monospace;
+  }
 }

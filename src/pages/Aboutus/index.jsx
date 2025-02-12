@@ -31,7 +31,11 @@ export default function Aboutus() {
                           <p className="text-justify">{AboutPageText.about_des4}</p>
                         </>
                       )}
-                <button className="btn readmore mt-3" onClick={handleReadMore}>
+                <button style={{
+                  background:'blue',
+                  color:'white',
+                  
+                }} className="btn readmore mt-3" onClick={handleReadMore}>
                  {showMore ? 'Read Less' : 'Read More'}
            </button>
          </div>
