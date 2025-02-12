@@ -1,6 +1,6 @@
 import Routing from './routes/routing';
 
-const App = () =>{
+const App = () => {
   return (
       <>
   <Routing/>
