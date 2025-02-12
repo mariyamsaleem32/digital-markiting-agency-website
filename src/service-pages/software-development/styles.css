@@ -7,6 +7,24 @@ body {
     color: #333;
   }
   
+  #head-style{
+  font-weight: bold;
+  font-size: 60px;
+  color: #0c4f7c;
+  }
+
+  .highlight {
+    color: #128fe2;
+    font-size: 60px;
+  }
+  
+  #software-para{
+    font-size:32px;
+    font-weight:bold;
+    color:white;
+    font-family:monospace;
+  }
+
   h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
@@ -60,10 +78,6 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     color: #2c3e50;
-  }
-  
-  .highlight {
-    color: #3498db;
   }
   
   .subheading {
@@ -203,10 +217,28 @@ body {
     .hero-subtitle {
       font-size: 1.2rem;
     }
+    #head-style{
+      font-weight: bold;
+      font-size: 40px;
+      color: #0c4f7c;
+      }
+    
+      .highlight {
+        color: #128fe2;
+        font-size: 40px;
+      }
+      
+      #software-para{
+        font-size:27px;
+        font-weight:bold;
+        color:white;
+        font-family:monospace;
+      }
+    
   }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
+  @media (max-width: 388px) {
     .hero-heading {
       font-size: 2.5rem;
     }
@@ -231,5 +263,22 @@ body {
     .card-description {
       font-size: 0.9rem;
     }
+    #head-style{
+      font-weight: bold;
+      font-size: 30px;
+      color: #0c4f7c;
+      }
+    
+      .highlight {
+        color: #128fe2;
+        font-size: 30px;
+      }
+      
+      #software-para{
+        font-size:20px;
+        font-weight:bold;
+        color:white;
+        font-family:monospace;
+      }
   }
   

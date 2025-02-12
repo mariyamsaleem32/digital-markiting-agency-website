@@ -8,8 +8,8 @@ const HeroSection = () => {
   return (
     <div className="custom-hero-container">
       <div className="custom-hero-overlay">
-        <Title  style={{fontSize:'50px',fontWeight:'bold'}} level={2} className="hero-title">CUSTOM <span className="highlight">WEBSITES</span></Title>
-        <Paragraph className="hero-subtitle" style={{fontSize:'28px',fontWeight:'bold',color:'skin',fontFamily:'monospace'}}>
+        <Title  id="style" level={2} className="hero-title">CUSTOM <span className="highlight">WEBSITES</span></Title>
+        <Paragraph className="hero-subtitle" id="pera-style">
         The World’s Premier Digital Marketing Agency
         </Paragraph>
       </div>

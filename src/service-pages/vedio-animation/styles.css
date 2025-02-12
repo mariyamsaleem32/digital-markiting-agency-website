@@ -7,6 +7,18 @@ body {
     color: #333;
   }
   
+  #mobile-head{
+font-size: 60px;
+font-weight: bold;
+color: #db9334;
+  }
+
+  .highlight {
+    color: #186fa8;
+    font-size: 60px;
+   font-weight: bold;
+  }
+
   h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
@@ -60,10 +72,6 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     color: #2c3e50;
-  }
-  
-  .highlight {
-    color: #3498db;
   }
   
   .subheading {
@@ -203,10 +211,21 @@ body {
     .hero-subtitle {
       font-size: 1.2rem;
     }
+    #mobile-head{
+      font-size: 40px;
+      font-weight: bold;
+      color: #db9334;
+        }
+      
+        .highlight {
+          color: #186fa8;
+          font-size: 40px;
+         font-weight: bold;
+        }
   }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
+  @media (max-width: 368px) {
     .hero-heading {
       font-size: 2.5rem;
     }
@@ -231,5 +250,16 @@ body {
     .card-description {
       font-size: 0.9rem;
     }
+    #mobile-head{
+      font-size: 30px;
+      font-weight: bold;
+      color: #db9334;
+        }
+      
+        .highlight {
+          color: #186fa8;
+          font-size: 30px;
+         font-weight: bold;
+        }
   }
   

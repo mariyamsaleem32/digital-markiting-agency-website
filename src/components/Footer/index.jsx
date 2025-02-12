@@ -18,7 +18,7 @@ const Footer = () => {
               <Text className="footer-text"><FaMapMarkerAlt /> Karachi, Pakistan</Text><br />
               <Text className="footer-text"><FaPhoneAlt /> 0320 7707187</Text><br />
               <Text className="footer-text"><FaEnvelope /> info.visualimagery@gmail.com</Text><br />
-              <Space>
+              <Space style={{marginTop:'10px'}}>
                 <Button 
                   icon={<FaWhatsapp />} 
                   href="https://wa.me/923132403968" 
@@ -42,21 +42,21 @@ const Footer = () => {
             <Col xs={24} sm={12} md={6}>
               <Title level={4} style={{ color: 'white' }}>Quick Links</Title>
               <Space direction="vertical">
-                <Link to="/aboutus" style={{ color: 'white' }}>About Us</Link>
-                <Link to="/contactus" style={{ color: 'white' }}>Contact Us</Link>
-                <Link to="/services" style={{ color: 'white' }}>Our Services</Link>
-                <Link to="/faqs" style={{ color: 'white' }}>Terms & Conditions</Link>
+                <Link to="/aboutus" style={{ color: 'white', textDecoration:'none' }}>About Us</Link>
+                <Link to="/contactus" style={{ color: 'white', textDecoration:'none' }}>Contact Us</Link>
+                <Link to="/services" style={{ color: 'white', textDecoration:'none' }}>Our Services</Link>
+                <Link to="/faqs" style={{ color: 'white', textDecoration:'none' }}>Terms & Conditions</Link>
               </Space>
             </Col>
             <Col xs={24} sm={12} md={6}>
               <Title level={4} style={{ color: 'white' }}>Our Services</Title>
               <Space direction="vertical">
-                <Link to="/creative-identity" style={{ color: 'white' }}>Creative Identity</Link>
-                <Link to="/custom-website" style={{ color: 'white' }}>Custom Website</Link>
-                <Link to="/digital-marketing" style={{ color: 'white' }}>Digital Marketing</Link>
-                <Link to="/mobile-apps" style={{ color: 'white' }}>Mobile Apps</Link>
-                <Link to="/software-development" style={{ color: 'white' }}>Software Development</Link>
-                <Link to="/video-animation" style={{ color: 'white' }}>Video Animation</Link>
+                <Link to="/creative-identity" style={{ color: 'white',textDecoration:'none' }}>Creative Identity</Link>
+                <Link to="/custom-website" style={{ color: 'white',textDecoration:'none' }}>Custom Website</Link>
+                <Link to="/digital-marketing" style={{ color: 'white',textDecoration:'none' }}>Digital Marketing</Link>
+                <Link to="/mobile-apps" style={{ color: 'white',textDecoration:'none' }}>Mobile Apps</Link>
+                <Link to="/software-development" style={{ color: 'white',textDecoration:'none' }}>Software Development</Link>
+                <Link to="/vedio-animation" style={{ color: 'white',textDecoration:'none' }}>Video Animation</Link>
               </Space>
             </Col>
             <Col xs={24} sm={12} md={6}>

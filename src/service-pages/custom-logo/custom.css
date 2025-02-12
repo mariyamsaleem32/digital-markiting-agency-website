@@ -1,235 +1,300 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  h1, h2, h3, h4 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  /* Hero Section */
-  .hero-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #2c3e50;
-    text-align: center;
-    margin-top: 2rem;
-  }
-  
-  .hero-description {
-    font-size: 1.2rem;
-    color: #7f8c8d;
-    text-align: center;
-    margin: 2rem 0;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* SubHero Section */
-  .subhero-container {
-    margin-top: 2rem;
-  }
-  
-  /* Offer Section */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-  }
-  
-  .heading {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-  }
-  
-  .highlight {
-    color: #3498db;
-  }
-  
-  .subheading {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #7f8c8d;
-    margin-bottom: 3rem;
-  }
-  
-  .custom-card {
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  .card-image {
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .card-content {
-    padding: 1rem;
-  }
-  
-  .card-title {
-    font-weight: bold;
-    color: #2c3e50;
-  }
-  
-  .card-description {
-    font-size: 1rem;
-    color: #7f8c8d;
-  }
-  
-  /* Choose Us Section */
-  .choose-us-container {
-    background-color: #ecf0f1;
-    padding: 4rem 2rem;
-    margin-top: 3rem;
-  }
-  
-  .choose-us-heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 3rem;
-  }
-  
-  .feature-card {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .feature-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .feature-icon {
-    font-size: 3rem;
-    color: #3498db;
-    margin-bottom: 1rem;
-  }
-  
-  .feature-card h4 {
-    font-size: 1.5rem;
-    color: #2c3e50;
-    font-weight: 600;
-  }
-  
-  .feature-card p {
-    color: #7f8c8d;
-    font-size: 1rem;
-    margin-top: 1rem;
-  }
-  
-  /* Hero Section Styles */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+#style{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(103, 255, 15);
+}
+
+#pera-style{
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(238, 76, 76);
+  font-family: monospace;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin: 2rem 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SubHero Section */
+.subhero-container {
+  margin-top: 2rem;
+}
+
+/* Offer Section */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.highlight {
+  color: #3498db;
+}
+
+.subheading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 3rem;
+}
+
+.custom-card {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-image {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Choose Us Section */
+.choose-us-container {
+  background-color: #ecf0f1;
+  padding: 4rem 2rem;
+  margin-top: 3rem;
+}
+
+.choose-us-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Hero Section Styles */
 .custom-hero-container {
-    position: relative;
-    height: 500px;
-    background-image: url('../../assets//Images/custom-bg.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #c2afaf;
-    text-align: center;
+  position: relative;
+  height: 500px;
+  background-image: url('../../assets//Images/custom-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c2afaf;
+  text-align: center;
+}
+
+.text {
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(51, 44, 44);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.custom-hero-overlay {
+  background-color: rgba(247, 183, 227, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Monospace', sans-serif;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* Highlighted Text */
+.highlight {
+  color: #3498db; /* Highlight color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-container {
+      height: 400px;
   }
-  
-  .text{
-    font-size: 17px;
-    font-weight:bold;
-    color: rgb(51, 44, 44);
-    font-family: 'Times New Roman', Times, serif;
-    }
-    
-  .custom-hero-overlay {
-    background-color: rgba(247, 183, 227, 0.5);
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 80%;
-  }
-  
+
   .hero-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.5rem;
-    color: #fff;
-    font-family: 'Monospace', sans-serif;
-    font-weight: 600;
-    margin-top: 0;
-  }
-  
-  /* Highlighted Text */
-  .highlight {
-    color: #3498db; /* Highlight color */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero-container {
-      height: 350px;
-    }
-  
-    .hero-title {
-      font-size: 2rem;
-    }
-  
-    .hero-subtitle {
-      font-size: 1.2rem;
-    }
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero-heading {
       font-size: 2.5rem;
-    }
-  
-    .hero-description {
+  }
+
+  .hero-subtitle {
+      font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+      height: 350px;
+  }
+
+  .hero-heading {
+      font-size: 2rem;
+  }
+
+  .hero-description {
       font-size: 1rem;
       padding: 0 1rem;
-    }
-  
-    .choose-us-heading {
+  }
+
+  .choose-us-heading {
       font-size: 2rem;
-    }
-  
-    .feature-card {
+  }
+
+  .feature-card {
       padding: 1.5rem;
-    }
-  
-    .card-title {
+  }
+
+  .card-title {
       font-size: 1.2rem;
-    }
-  
-    .card-description {
+  }
+
+  .card-description {
       font-size: 0.9rem;
-    }
+  }
+
+  .text {
+      font-size: 14px;
+  }
+}
+
+/* For small screens (mobile) */
+@media (max-width: 480px) {
+  .hero-heading {
+      font-size: 1.5rem;
+  }
+
+  .hero-description {
+      font-size: 0.9rem;
+      margin: 1rem 0;
+  }
+
+  .subhero-container {
+      margin-top: 1rem;
+  }
+
+  .container {
+      padding: 2rem 1rem;
+  }
+
+  .heading {
+      font-size: 2rem;
+  }
+
+  .highlight {
+      font-size: 1.1rem;
+  }
+
+  .feature-card {
+      padding: 1rem;
+  }
+
+  .card-title {
+      font-size: 1rem;
+  }
+
+  .card-description {
+      font-size: 0.8rem;
+  }
+
+  .choose-us-heading {
+      font-size: 1.8rem;
   }
   
+}

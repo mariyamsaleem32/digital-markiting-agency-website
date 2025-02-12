@@ -10,6 +10,20 @@ body {
   color: #333;
 }
 
+#style{
+  text-align: center;
+  font-size:60px;
+  font-weight:bold;
+  color:rgb(31, 173, 173);
+}
+
+#pera-style{
+  font-size:30px;
+  font-weight:bold;
+  color:white;
+  font-family:monospace;
+}
+
 /* Hero Section */
 .hero-container {
   position: relative;
@@ -31,7 +45,7 @@ body {
 }
 
 .hero-title {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -194,6 +208,19 @@ body {
   .feature-card p {
     font-size: 15px;
   }
+  #style{
+    text-align: center;
+    font-size:60px;
+    font-weight:bold;
+    color:rgb(31, 173, 173);
+  }
+  
+  #pera-style{
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+    font-family:monospace;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -236,6 +263,19 @@ body {
   .feature-card p {
     font-size: 14px;
   }
+  #style{
+    text-align: center;
+    font-size:40px;
+    font-weight:bold;
+    color:rgb(31, 173, 173);
+  }
+  
+  #pera-style{
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    font-family:monospace;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -273,5 +313,18 @@ body {
 
   .feature-card {
     padding: 15px;
+  }
+  #style{
+    text-align: center;
+    font-size:30px;
+    font-weight:bold;
+    color:rgb(31, 173, 173);
+  }
+  
+  #pera-style{
+    font-size:15px;
+    font-weight:bold;
+    color:white;
+    font-family:monospace;
   }
 }

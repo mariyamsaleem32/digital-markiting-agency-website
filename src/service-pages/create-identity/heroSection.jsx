@@ -8,8 +8,8 @@ const HeroSection = () => {
   return (
     <div className="hero-container">
       <div className="hero">
-        <Title  style={{fontSize:'50px',fontWeight:'bold'}} level={2} className="hero-title">CREATIVE <span className="highlight">IDENTITY</span></Title>
-        <Paragraph className="hero-subtitle" style={{fontSize:'28px',fontWeight:'bold',color:'white',fontFamily:'monospace'}}>
+        <Title id='style' level={2} className="hero-title">CREATIVE <span className="highlight">IDENTITY</span></Title>
+        <Paragraph id="pera-style"  className="hero-subtitle">
         The World’s Premier Digital Marketing Agency
         </Paragraph>
       </div>

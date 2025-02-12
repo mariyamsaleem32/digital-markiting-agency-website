@@ -181,12 +181,12 @@ const Contactus = () => {
       <div className="container-fluid pt-5">
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.11675417118!2d80.06892448836716!3d13.047487785642284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1618387834124!5m2!1sen!2sin"
-            width="100%"
-            height="550"
-            loading="lazy"
-            className="map-style p-0 m-0"
-          ></iframe>
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d350800.53193078435!2d67.15546194999999!3d25.193202399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh!5e1!3m2!1sen!2s!4v1739357719512!5m2!1sen!2s"
+           width="100%"
+           height="550"
+           loading="lazy"
+           className="map-style p-0 m-0"
+            ></iframe>
         </div>
       </div>
     </div>

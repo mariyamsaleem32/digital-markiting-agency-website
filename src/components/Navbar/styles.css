@@ -61,6 +61,7 @@ body {
   color: white;
   font-size: 24px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .mobile-menu .ant-drawer-header {
