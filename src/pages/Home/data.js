@@ -13,7 +13,7 @@ export const HomePageText ={
     services_box_des1: 'We help you create a unique and memorable identity for your brand. Our creative solutions focus on making your business stand out through design and visuals.',
   
     services_box_title2: 'Custom Website',
-    services_box_des2: 'We design and develop custom websites that are tailored to your business needs. Our team ensures a responsive, user-friendly experience that drives results.',
+    services_box_des2: 'We create bespoke websites expertly tailored to your business needs, utilizing cutting-edge technologies to ensure a seamless, responsive, and intuitive user experience.',
   
     services_box_title3: 'Digital Marketing',
     services_box_des3: 'Our digital marketing strategies are designed to increase your online visibility. From SEO to social media, we help you reach the right audience and grow your business.',

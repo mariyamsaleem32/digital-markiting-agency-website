@@ -9,7 +9,7 @@ export const ServicesText = {
   
     services_box_title2: 'Custom Website',
     services_box_des2:
-      'We design and develop custom websites that are tailored to your business needs. Our team ensures a responsive, user-friendly experience that drives results.',
+      'We create bespoke websites expertly tailored to your business needs, utilizing cutting-edge technologies to ensure a seamless, responsive, and intuitive user experience.',
   
     services_box_title3: 'Digital Marketing',
     services_box_des3:

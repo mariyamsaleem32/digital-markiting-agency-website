@@ -67,8 +67,8 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom" style={{ backgroundColor: '#2D3748', padding: '10px 0' }}>
-        <Typography.Text style={{ color: 'white', textAlign: 'center', display: 'block' }}>
-          @your site all rights reserved
+        <Typography.Text style={{ color: 'white', textAlign: 'center', display: 'block', fontWeight:'bold'}}>
+          @ visualimagery all rights reserved
         </Typography.Text>
       </div>
     </>

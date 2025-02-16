@@ -2,14 +2,8 @@ import { useState } from "react";
 import { HomePageText } from './data';  
 import Slideshow from "../../components/Slideshow";
 import "./style.css";
-import  team1  from "../../assets/Images/team-1.jpeg";
-import  team2  from "../../assets/Images/team-2.jpeg";
-import  team3  from "../../assets/Images/team-3.jpeg";
-import  team4  from "../../assets/Images/team-4.jpeg";
-import  team5  from "../../assets/Images/team-5.jpeg";
-import  team6  from "../../assets/Images/team-6.jpeg";
 import  aboutus  from "../../assets/Images/about-us.jpg";
-import  test  from "../../assets/Images/test.jpg";
+import  test  from "../../assets/Images/clients.jpeg";
 import { FaPalette, FaLaptopCode, FaBullhorn, FaMobileAlt, FaCogs, FaVideo } from 'react-icons/fa';
 import { Link } from "react-router";
 
@@ -120,20 +114,18 @@ function Home() {
           <FaVideo className="icon1" />
           <h4>{HomePageText.services_box_title6}</h4>
           <p>{HomePageText.services_box_des6}</p>
-          <button className="btn learn-more-btn"><Link to={'/vedio-animation'}>Learn More</Link></button>
+          <button className="btn learn-more-btn"><Link to={'/vedio-animation'} >Learn More</Link></button>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
         {/* Header 4 test */}
         <div className="home-test">
           <div className="container">
             <div className="row">
               <div className="col-lg-6 col-md-6 col-12">
-                <div className="">
+                <div>
                   <h6>TESTIMONIALS</h6>
                   <h4>What Our Clients Are Saying?</h4>
                   <p>
@@ -149,114 +141,15 @@ function Home() {
 
 At visualimaginary, we’re dedicated to providing high-quality, results-oriented solutions that help our clients succeed.
 
-
                   </p>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 col-12 pt-5">
-                <img src={test} className="img-fluid" alt="test" />
+                <img src={test} className="img-fluid" alt="team" style={{
+                  width:'100%',
+                  height:'100%'
+                }} />
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Header 5 team */}
-        <div className="hometeam">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6 col-md-6 col-6">
-                <div className="hometeamheader">
-                  <h6>OUR TEAM</h6>
-                  <h4>We Help to Acheive Your Business Goal</h4>
-                  <p>
-                  At visualimagery, our team is the heart of everything we do. We are a diverse group of digital marketing experts, creative thinkers, and problem solvers, all united by a passion for helping businesses grow. From strategists and designers to content creators and data analysts, each team member brings their unique skills and insights to the table, ensuring that your brand gets the attention it deserves. Together, we work collaboratively to deliver innovative solutions and outstanding results for every client we serve.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-6">
-                <div className="hometeam-box">
-                  <div class="our-team">
-                    <div class="pic">
-                      <img src={team1} />
-                    </div>
-                    <div class="team-content">
-                      <h3 class="title">MARTIN SMITH</h3>
-                      <span class="post">Founder & CEO</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4 col-6">
-                <div className="hometeam-box">
-                <div class="our-team">
-                    <div class="pic">
-                      <img src={team2} />
-                    </div>
-                    <div class="team-content">
-                      <h3 class="title">Olivia</h3>
-                      <span class="post">Marketing Lead</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-4 col-6">
-                <div className="hometeam-box">
-                <div class="our-team">
-                    <div class="pic">
-                      <img src={team3} />
-                    </div>
-                    <div class="team-content">
-                      <h3 class="title">FRANKLIN HARBET</h3>
-                      <span class="post">Web Designer</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="col-lg-3 col-md-4 col-6">
-                <div className="hometeam-box">
-                <div class="our-team">
-                    <div class="pic">
-                      <img src={team4} />
-                    </div>
-                    <div class="team-content">
-                      <h3 class="title">Miranda joy</h3>
-                      <span class="post">Web Developer</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="col-lg-3 col-md-4 col-6">
-                <div className="hometeam-box">
-                <div class="our-team">
-                    <div class="pic">
-                      <img src={team5} />
-                    </div>
-                    <div class="team-content">
-                      <h3 class="title">LINDA ANDERSON</h3>
-                      <span class="post">Support</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="col-lg-3 col-md-4 col-6">
-                <div className="hometeam-box">
-                <div class="our-team">
-                    <div class="pic">
-                      <img src={team6} />
-                    </div>
-                    <div class="team-content">
-                      <h3 class="title">KRISTIANA</h3>
-                      <span class="post">Support</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
             </div>
           </div>
         </div>

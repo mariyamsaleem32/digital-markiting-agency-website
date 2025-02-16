@@ -45,9 +45,6 @@ const Navbar = () => {
               <Link to="/services" style={{ color: 'white',textDecoration:'none' }}>Services</Link>
             </Menu.Item>
             <Menu.Item key="4">
-              <Link to="/team" style={{ color: 'white',textDecoration:'none' }}>Team</Link>
-            </Menu.Item>
-            <Menu.Item key="5">
               <Link to="/contactus" style={{ color: 'white',textDecoration:'none' }}>Contact</Link>
             </Menu.Item>
           </Menu>
@@ -75,9 +72,6 @@ const Navbar = () => {
             <Link to="/services" style={{ color: 'white',textDecoration:'none' }}>Services</Link>
           </Menu.Item>
           <Menu.Item key="4">
-            <Link to="/team" style={{ color: 'white',textDecoration:'none' }}>Team</Link>
-          </Menu.Item>
-          <Menu.Item key="5">
             <Link to="/contactus" style={{ color: 'white',textDecoration:'none' }}>Contact</Link>
           </Menu.Item>
         </Menu>
