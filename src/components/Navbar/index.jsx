@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
 import { Layout, Menu, Drawer } from 'antd';
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
-import './styles.css';
-
+import './styles.css'
 const { Header } = Layout;
 
 const Navbar = () => {
@@ -30,23 +29,30 @@ const Navbar = () => {
       <Header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         {/* Show Drawer Menu Icon for small screens */}
         {isMobile ? (
-          <button onClick={toggleMobileMenu} style={{ background: 'transparent', border: 'none', color: '#fff' }}>
-            {isMobileMenuOpen ? <CloseOutlined style={{ fontSize: 24, color: 'white' }} /> : <MenuOutlined style={{ fontSize: 24, color: 'white' }} />}
+          <button
+            onClick={toggleMobileMenu}
+            style={{ background: 'transparent', border: 'none', color: '#fff' }}
+          >
+            {isMobileMenuOpen ? (
+              <CloseOutlined style={{ fontSize: 24, color: 'white' }} />
+            ) : (
+              <MenuOutlined style={{ fontSize: 24, color: 'white' }} />
+            )}
           </button>
         ) : (
           // Desktop Menu
           <Menu theme="dark" mode="horizontal" style={{ flexGrow: 1, justifyContent: 'center' }}>
             <Menu.Item key="1">
-              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
             </Menu.Item>
             <Menu.Item key="2">
-              <Link to="/aboutus" className="nav-link">About</Link>
+              <Link to="/aboutus" style={{ textDecoration: 'none', color: 'white' }}>About</Link>
             </Menu.Item>
             <Menu.Item key="3">
-              <Link to="/services" className="nav-link">Services</Link>
+              <Link to="/services" style={{ textDecoration: 'none', color: 'white' }}>Services</Link>
             </Menu.Item>
             <Menu.Item key="4">
-              <Link to="/contactus" className="nav-link">Contact</Link>
+              <Link to="/contactus" style={{ textDecoration: 'none', color: 'white' }}>Contact</Link>
             </Menu.Item>
           </Menu>
         )}
@@ -62,18 +68,26 @@ const Navbar = () => {
         width={250}
         style={{ backgroundColor: 'black', color: 'white' }}
       >
-        <Menu mode="vertical" theme="dark">
+        <Menu mode="vertical" theme="dark"  style={{ backgroundColor: 'black', color: 'white' }}>
           <Menu.Item key="1">
-            <Link to="/" className="nav-link" onClick={toggleMobileMenu}>Home</Link>
+            <Link to="/" className="nav-link" onClick={toggleMobileMenu} style={{ textDecoration: 'none', color: 'white' }}>
+              Home
+            </Link>
           </Menu.Item>
           <Menu.Item key="2">
-            <Link to="/aboutus" className="nav-link" onClick={toggleMobileMenu}>About</Link>
+            <Link to="/aboutus" className="nav-link" onClick={toggleMobileMenu} style={{ textDecoration: 'none', color: 'white' }}>
+              About
+            </Link>
           </Menu.Item>
           <Menu.Item key="3">
-            <Link to="/services" className="nav-link" onClick={toggleMobileMenu}>Services</Link>
+            <Link to="/services" className="nav-link" onClick={toggleMobileMenu} style={{ textDecoration: 'none', color: 'white' }}>
+              Services
+            </Link>
           </Menu.Item>
           <Menu.Item key="4">
-            <Link to="/contactus" className="nav-link" onClick={toggleMobileMenu}>Contact</Link>
+            <Link to="/contactus" className="nav-link" onClick={toggleMobileMenu} style={{ textDecoration: 'none', color: 'white' }}>
+              Contact
+            </Link>
           </Menu.Item>
         </Menu>
       </Drawer>
