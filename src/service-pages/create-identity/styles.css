@@ -10,11 +10,11 @@ body {
   color: #333;
 }
 
-#creative-style{
+#creative-style {
   text-align: center;
-  font-size:70px;
-  font-weight:bold;
-  color:rgb(31, 173, 173);
+  font-size: 70px;
+  font-weight: bold;
+  color: rgb(31, 173, 173);
 }
 
 .highlight {
@@ -23,11 +23,11 @@ body {
   font-weight: bold;
 }
 
-#creative-para-style{
-  font-size:40px;
-  font-weight:bold;
-  color:white;
-  font-family:monospace;
+#creative-para-style {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: monospace;
 }
 
 /* Hero Section */
@@ -36,18 +36,18 @@ body {
   background-image: url('../../assets/Images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px; /* Added some padding for smaller screens */
+  padding: 0 20px;
 }
 
 .hero-overlay {
   text-align: center;
   color: white;
   padding: 50px;
-  max-width: 90%; /* Increased flexibility */
+  max-width: 90%;
 }
 
 .hero-title {
@@ -98,7 +98,12 @@ body {
   margin-bottom: 40px;
 }
 
+/* Improved Card Styles */
 .custom-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -113,8 +118,19 @@ body {
 }
 
 .text {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #555;
   font-size: 16px;
+  text-align: center;
+}
+
+#head{
+text-align: center;
+font-weight: bold;
+font-style: italic;
 }
 
 .ant-card-meta-title {
@@ -211,24 +227,16 @@ body {
     font-size: 15px;
   }
 
-  #creative-style{
-    text-align: center;
-    font-size:70px;
-    font-weight:bold;
-    color:rgb(31, 173, 173);
-  }
-  
-  .highlight {
-    color: #ff6347;
+  #creative-style {
     font-size: 70px;
-    font-weight: bold;
   }
-  
-  #creative-para-style{
-    font-size:40px;
-    font-weight:bold;
-    color:white;
-    font-family:monospace;
+
+  .highlight {
+    font-size: 70px;
+  }
+
+  #creative-para-style {
+    font-size: 40px;
   }
 }
 
@@ -273,24 +281,16 @@ body {
     font-size: 14px;
   }
 
-  #creative-style{
-    text-align: center;
-    font-size:40px;
-    font-weight:bold;
-    color:rgb(31, 173, 173);
-  }
-  
-  .highlight {
-    color: #ff6347;
+  #creative-style {
     font-size: 40px;
-    font-weight: bold;
   }
-  
-  #creative-para-style{
-    font-size:20px;
-    font-weight:bold;
-    color:white;
-    font-family:monospace;
+
+  .highlight {
+    font-size: 40px;
+  }
+
+  #creative-para-style {
+    font-size: 20px;
   }
 }
 
@@ -316,7 +316,7 @@ body {
   }
 
   .container {
-    padding: 30px 10px; /* Reduced padding for very small screens */
+    padding: 30px 10px;
   }
 
   .heading {
@@ -330,24 +330,16 @@ body {
   .feature-card {
     padding: 15px;
   }
- 
-#creative-style{
-  text-align: center;
-  font-size:30px;
-  font-weight:bold;
-  color:rgb(31, 173, 173);
-}
 
-.highlight {
-  color: #ff6347;
-  font-size: 30px;
-  font-weight: bold;
-}
+  #creative-style {
+    font-size: 30px;
+  }
 
-#creative-para-style{
-  font-size:17px;
-  font-weight:bold;
-  color:white;
-  font-family:monospace;
-}
+  .highlight {
+    font-size: 30px;
+  }
+
+  #creative-para-style {
+    font-size: 17px;
+  }
 }

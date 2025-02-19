@@ -60,20 +60,20 @@ const Offer = () => {
         <Paragraph className="subheading">
         We offer satisfaction to its fullest. The work we do is the perfect example of how a digital agency should operate when at its fullest. Our every service given to our customer is revised and experimented with more than 100 times to make sure that they are satisfied.
         </Paragraph>
-        <Row gutter={[16, 16]}>
-          {services.map((service, index) => (
-            <Col xs={24} sm={12} md={12} lg={8} key={index}>
-              <Card
-                hoverable
-                cover={<img alt={service.title} src={service.image} className="card-image" />}
-                className="custom-card"
-              >
-                <Title level={4}>{service.title}</Title>
-                <Paragraph className='text'>{service.description}</Paragraph>
-              </Card>
-            </Col>
-          ))}
-        </Row>
+     <Row gutter={[16, 16]} style={{ display: "flex", flexWrap: "wrap" }}>
+                 {services.map((service, index) => (
+                  <Col xs={24} sm={12} md={12} lg={8} key={index} style={{ display: "flex" }}>
+                 <Card
+                  hoverable
+                  cover={<img alt={service.title} src={service.image} className="card-image" />}
+                  className="custom-card"
+                >
+                  <Title id="head" level={4}>{service.title}</Title>
+                  <Paragraph className="text">{service.description}</Paragraph>
+                </Card>
+               </Col>
+                 ))}
+                </Row>
       </div>
     </>
   );
