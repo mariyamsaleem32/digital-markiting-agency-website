@@ -43,17 +43,18 @@ const ChooseUs = () => {
   return (
     <div className="choose-us-container">
       <Title level={2} className="choose-us-heading">Why <span className="highlight">CHOOSE US</span></Title>
-      <Row gutter={[16, 16]}>
-        {features.map((feature, index) => (
-          <Col xs={24} sm={12} md={8} key={index}>
-            <div className="feature-card">
-              {feature.icon}
-              <Title level={4}>{feature.title}</Title>
-              <Paragraph>{feature.description}</Paragraph>
-            </div>
-          </Col>
-        ))}
-      </Row>
+      <Row gutter={[16, 16]} style={{ display: 'flex', flexWrap: 'wrap' }}>
+       {features.map((feature, index) => (
+       <Col xs={24} sm={12} md={8} key={index}>
+       <div className="feature-card">
+        {feature.icon}
+        <Title level={4}>{feature.title}</Title>
+        <Paragraph>{feature.description}</Paragraph>
+      </div>
+    </Col>
+  ))}
+</Row>
+
     </div>
   );
 };
